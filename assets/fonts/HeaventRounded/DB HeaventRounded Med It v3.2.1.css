@@ -1,0 +1,9 @@
+/* Webfont: DBHeaventRounded-MedIt */@font-face {
+    font-family: 'DBHeaventRoundedMedIt';
+    src: url('DB HeaventRounded Med It v3.2.woff2') format('woff2'), /* Modern Browsers */
+         url('DB HeaventRounded Med It v3.2.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

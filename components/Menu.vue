@@ -1,0 +1,242 @@
+<template>
+<div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-xl-block d-xxl-block" style="background-color: #F6ECE0;z-index: 999;">
+    <div class="container">
+      <nuxt-link @click="scrollToTop" class="navbar-brand" :to="localePath('/')">
+        <img src="../assets/logo-Sellsuki.svg" alt="sellsuki-logo" loading="lazy" width="141.29" height="60" class="d-inline-block align-text-top cover-img">
+      </nuxt-link>
+      <div class="ml-2">
+        <ul class="navbar-nav navbar-custom shadow text-s-24 text-w-500 menu-bar" style="padding:0px !important;width: 100% !important;"> <!-- 797px -->
+        <nuxt-link @click="scrollToTop" aria-current="page" :to="localePath('/')">
+          <li class="nav-item navbar-item" style="border-radius: 50px 0px 0px 50px;">
+            <div style="padding-left:19px !important" class="nav-link text-c-menu">{{$t("Menu.Home")}}</div>
+          </li>
+        </nuxt-link>
+          <!-- <li class="nav-item navbar-item">
+            <nuxt-link @click="scrollToTop" class="nav-link border-menu text-c-menu" aria-current="page" to="/Services">Services <i class="bi bi-chevron-down" style="font-size: 15px;"></i></nuxt-link>
+            <ul class="dropdown" style="padding: 30px 50px 30px 50px;width: 1380px;left: 50%;">
+              <i class="bi bi-caret-up-fill pe-5 ps-5" style="font-size: 40px;position: absolute;left: 355px;color: #ffffff;bottom: 440px;"></i>
+              <div class="row">
+                <div class="col-2 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;height:415px">
+                  <a href="#"><img src="./../../assets/icon/Vector5.webp" alt="icon-menu1"><div class="text-w-700 text-s-24" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Digital Marketing</div></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Influencer Marketing</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Content Marketing</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Collaborative Ads <br>(Marketplace)</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Spy ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Social Listening</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Ads Intelligence</p></a>
+                </div>
+                <div class="col-2 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 220px !important;">
+                  <a href="#"><img src="./../../assets/icon/Vector5.webp" alt="icon-menu1"><div class="text-w-700 text-s-24" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Digital Advertising</div></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Tiktok Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Facebook Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Instagram Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Youtube Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Google Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Twitter Ads</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Line Ads Platform</p></a> 
+                </div>
+                <div class="col-2 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;">
+                  <a href="#"><img src="./../../assets/icon/Vector5.webp" alt="icon-menu1"><div class="text-w-700 text-s-24" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Business Consult</div></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">                
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Marketing Strategy</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;margin-bottom: 2rem;">e-Distributor</p></a><br>
+                  <a @click="scrollToTop" href="#"><img src="./../../assets/icon/Vector5.webp" alt="icon-menu1"><div class="text-w-700 text-s-24" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">LINE Service</div></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">LINE My shop</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">LINE OA</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">LINE Chatbot</p></a>
+                </div>
+                <div class="col-4 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 20px !important;padding-left: 20px !important;width: 405px !important;">
+                  <a href="#"><img src="./../../assets/icon/Vector5.webp" alt="icon-menu1"><div class="text-w-700 text-s-24" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">MarTech</div></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 360px;height: 0px;">
+                  <div class="row">
+                    <div class="col-6">
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Information Website</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">E-Commerce Website</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Business Intelligence</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Catalog Website <br>(LINE my shop)</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">LINE API</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Campaign Manager</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Application System <br>Development</p></a>
+                    </div>
+                    <div class="col-6" style="padding: 0;">
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Order Management<br>System</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">CRM System</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Customer Data<br>Platform</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Consult & Maintenance<br>Service Agreement</p></a><br>
+                      <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Marketing Automation</p></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 hover-manu" style="padding-right: 20px !important;padding-left: 20px !important;">
+                  <a href="#"><img src="./../../assets/icon/Vector5.webp" alt="icon-menu1"><div class="text-w-700 text-s-24" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">E-commerce Operation</div></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 214px;height: 0px;">
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Fulfillment Service</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Fulfillment System</p></a><br>
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;margin-bottom: 2rem;">Product Catalog<br>Management</p></a><br>
+                  <a @click="scrollToTop" href="#"><img src="./../../assets/icon/Vector5.webp" alt="icon-menu1"><div class="text-w-700 text-s-24" style="color:#50151C;margin-left:10px;position: absolute;margin-top: 2px;">Delivery</div></a>
+                  <hr style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
+                  <a @click="scrollToTop" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">Delivery</p></a>
+                </div>
+              </div>
+            </ul>
+          </li> -->
+          <li class="nav-item navbar-item">
+            <a class="nav-link border-menu text-c-menu" aria-current="page" href="#">{{$t("Menu.Solution")}} <i class="bi bi-chevron-down" style="font-size: 15px;"></i></a>
+            <ul class="dropdown" style="padding: 30px 32px 30px 32px;width: 540px;margin-left: 75px;"> <!-- 43% -->
+              <i class="bi bi-caret-up-fill pe-5 ps-5" style="font-size: 40px;position: absolute;left: 185px;color: #ffffff;bottom: 525px;"></i>
+              <div class="row">
+                <div class="col-6 hover-manu" style="border-right: 1px solid #E7E7EA;padding-right: 15px !important;padding-left: 15px !important;height:495px;width: 235px !important;">
+                  <span class="text-w-700 text-s-24" style="color:#50151C !important"><img class="me-2" src="./../assets/icon/icon-menu1.webp" alt="icon-menu1">{{$t("Menu.Solutions.TypesofBusiness")}}</span>
+                  <hr class="mt-3" style="border: 1px solid #E7E7EA;width: 173px;height: 0px;">
+                  <nuxt-link @click="scrollToTop" :to="localePath('/types-of-business/business-owner')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.BusinessOwner")}}</p></nuxt-link><br>
+                  <nuxt-link @click="scrollToTop" :to="localePath('/types-of-business/online-merchant')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.OnlineMerchant")}}</p></nuxt-link><br>
+                  <nuxt-link @click="scrollToTop" :to="localePath('/types-of-business/corporate')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.Corporate")}}</p></nuxt-link>
+                </div>
+                <div class="col-6 hover-manu" style="padding-right: 15px !important;padding-left: 15px !important;width: 260px !important;">
+                  <span class="text-w-700 text-s-24" style="color:#50151C !important"><img class="me-2" src="./../assets/icon/icon-menu2.webp" alt="icon-menu1">{{$t("Menu.Solutions.Services-Products")}}</span>
+                  <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
+                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/fuse')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.FuseAdvertising")}}</p></nuxt-link><br>
+                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/lineagency')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.LINEAgency")}}</p></nuxt-link><br>
+                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/kaikong')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.KaikongContentMarketing")}}</p></nuxt-link><br>
+                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/beary')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.BearyWebTechService")}}</p></nuxt-link><br>
+                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/akita')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.AkitaFulfillment")}}</p></nuxt-link><br>
+                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/shipmunk')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;width: 255px;">{{$t("Menu.Solutions.ShipmunkDropshipping")}}</p></nuxt-link><br>
+                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/oc2plus')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;width: 255px;">{{$t("Menu.Solutions.Oc2PlusCustomerDataPlatform")}}</p></nuxt-link><br/>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <nuxt-link @click="scrollToTop" aria-current="page" :to="localePath('/solutions/wizemoves')">
+          <li class="nav-item navbar-item">
+            <div class="nav-link border-menu text-c-menu">โซลูชั่น</div>
+          </li>
+          </nuxt-link>
+          <nuxt-link @click="scrollToTop" aria-current="page" :to="localePath({ name: 'about-us' })">
+          <li class="nav-item navbar-item">
+            <div class="nav-link border-menu text-c-menu">{{$t("Menu.AboutUs")}}</div>
+          </li>
+          </nuxt-link>
+          <nuxt-link @click="scrollToTop" aria-current="page" :to="localePath('/portfolio')">
+          <li class="nav-item navbar-item">
+            <div class="nav-link border-menu text-c-menu">{{$t("Menu.Portfolio")}}</div>
+          </li>
+          </nuxt-link>
+          <a href="/blog" target="_blank" rel="noopener" aria-current="page">
+          <li class="nav-item navbar-item">
+            <div class="nav-link border-menu text-c-menu">{{$t("Menu.Blog")}}</div>
+          </li>
+          </a>
+          <nuxt-link @click="scrollToTop" aria-current="page" :to="localePath({ name: 'contact-us' })">
+          <li class="nav-item navbar-item">
+            <div class="nav-link border-menu text-c-menu">{{$t("Menu.ContactUs")}}</div>
+          </li>
+          </nuxt-link>
+          <nuxt-link @click="scrollToTop" aria-current="page" :to="localePath({ name: 'join-us' })">
+          <li class="nav-item navbar-item" style="border-radius: 0px 50px 50px 0px;">
+            <div class="nav-link border-menu text-c-menu">{{$t("Menu.JoinUs")}}</div>
+          </li>
+          </nuxt-link>
+        </ul>
+      </div>
+      <div class="ml-2">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <div class="nav-link text-c-menu cursor-pointer" style="margin-right:15px;margin-left:10px;padding-right: 0 !important;padding-left: 0 !important;">
+              <div v-if="$i18n.locale == 'en'" class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">EN</div>
+              <div v-else class="btn-icon text-w-700" style="background-color: #FDF5E8;font-size:16px">TH</div>
+            </div>
+             <ul class="dropdown" style="padding: 15px;width: 150px;height: 120px;margin-left: 35px;top: 90px">
+              <i class="bi bi-caret-up-fill" style="font-size: 40px;position: absolute;left: 55px;color: #FFFFFF;bottom: 90px;"></i>
+              <div class="row">
+                <div class="col-12">
+                  <nuxt-link :to="switchLocalePath('th-TH')" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">TH</p></nuxt-link>
+                  <hr style="border: 1px solid #50151C;width: 100px;height: 0px;">
+                  <nuxt-link :to="switchLocalePath('en')" href="#"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">EN</p></nuxt-link>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="tel:0900967526" target="_blank" rel="noopener" class="nav-link text-c-menu" style="margin-right:40px;margin-left:10x;padding-right: 0 !important;padding-left: 0 !important;"><img class="shadow-filter" style="background-color: #FFFFFF;border-radius: 50px;" src="./../assets/icon/Vector.webp" width="50" height="50" alt="icon-menu1" loading="lazy"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="d-block d-xl-none">
+    <NavMobile/>
+  </div>
+</div>
+</template>
+
+<script>
+import NavMobile from '@/components/NavMobile'
+
+export default {
+  name: 'Menu',
+  components: {
+    NavMobile
+  },
+  data () {
+    //const lang = localStorage.getItem('lang') || 'th-TH';
+    return {
+      menu: '',
+      component: '',
+      lang:''
+    }
+  },
+  methods: {
+    toggle(){
+        this.component = this.menu;
+    },
+    scrollToTop() {
+        window.scrollTo(0,0);
+    },
+    langChange(){
+      //localStorage.setItem('lang',event);
+      window.location.reload();
+    }
+  }
+}
+</script>
+
+<style scoped>
+.hover-manu a p:hover{
+  color: #F38100 !important;
+  font-weight: 700;
+}
+
+.hover-manu a p {
+  color: #50151C !important;
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+  padding-bottom: 5px !important;
+  margin-bottom: 10px !important;
+}
+.hover-manu a p:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  background: #F38100;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.hover-manu a p:hover:after { 
+  width: 100%; 
+}
+
+.menu-bar li:hover div {
+  color:#FFFFFF !important;
+  border: 0;
+}
+</style>
+

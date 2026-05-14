@@ -1,0 +1,1950 @@
+<template>
+  <div id="BusinessConsulting">
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-custom-size">
+          <div class="modal-header p-0">
+            <span id="exampleModalLabel" class="header-model">
+              สนใจรับคำปรึกษา
+            </span>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              data-tag="close_modal_button"></button>
+          </div>
+          <div class="modal-body p-0">
+            <FormDataUser :interested="interested" :blog="this.$route.query.blog" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <SuccessForm bu="Wizemoves" />
+    <section class="hero-section">
+      <div class="bg-img d-none d-md-block mt-5">
+        <div class="pb-md-0 pb-5 bg-color">
+          <div class="container">
+            <div class="row">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-7 col-sm-6 col-6">
+                <table class="align-middle banner-main" style="width: 100%">
+                  <td class="banner-height">
+                    <ol class="font-md">
+                      <ul class="breadcrumb">
+                        <li>
+                          <img class="mb-1 me-1" src="~/assets/SolutionsWizemoves/home.png" /><nuxt-link
+                            :to="localePath('/')" data-tag="breadcrumb_business_desktop"><span
+                              class="text-s-20 color-FFFFFF ms-1">Business</span></nuxt-link>
+                          <img class="mb-1 ms-1" src="~/assets/SolutionsWizemoves/chevron-right.png" />
+                        </li>
+                        <li>
+                          <nuxt-link :to="localePath('/solutions/wizemoves')"
+                            data-tag="breadcrumb_wizemoves_desktop"><span
+                              class="text-s-20 color-FFFFFF ms-1">WizeMoves</span></nuxt-link>
+                          <img class="mb-1 ms-1" src="~/assets/SolutionsWizemoves/chevron-right.png" />
+                        </li>
+                        <li>
+                          <span class="text-s-20 color-FFFFFF ms-1">Business Consulting</span>
+                        </li>
+                      </ul>
+                    </ol>
+                    <div class="mt-5">
+                      <h1 class="font-bd text-s-52 color-FFFFFF">
+                        Business Consulting
+                      </h1>
+                    </div>
+                    <p class="font-bd text-s-36 mt-3 color-FFFFFF">
+                      ที่ปรึกษาธุรกิจด้านกลยุทธ์ ผู้ช่วยเพิ่มยอดขาย<br />
+                      ให้เป้าหมายของคุณเป็นจริง
+                    </p>
+                    <p class="text-s-24 mt-3 color-FFFFFF">
+                      เราคือที่ปรึกษาด้านกลยุทธ์ที่ช่วยเพิ่มยอดขาย 100 %
+                      ภายในเวลา 1 ปี เราพร้อมเติบโตไปกับลูกค้า<br />
+                      ที่ปรึกษาที่พร้อมสร้างกลยุทธ์ให้เกิดขึ้นจริงและเปลี่ยนเป็นยอดขายได้
+                    </p>
+                    <div class="d-flex flex-wrap mt-3">
+                      <div class="badge-wizemoves">
+                        <img src="~/assets/SolutionsWizemoves/Consulting/Subtract.png" alt="Subtract.png"
+                          class="icon" />
+                        <span class="text text-s-20 font-df">วางแผนธุรกิจ</span>
+                      </div>
+                      <div class="badge-wizemoves ms-2">
+                        <img src="~/assets/SolutionsWizemoves/Consulting/Subtract.png" alt="Subtract.png"
+                          class="icon" />
+                        <span class="text text-s-20 font-df">การตลาดออนไลน์</span>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-wrap mt-4">
+                      <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
+                        class="btn-gradient text-s-24 font-md py-2" data-tag="hero_get_free_consultation_desktop">
+                        <img src="~/assets/SolutionsWizemoves/Consulting/cursor-arrow-rays.png"
+                          alt="cursor-arrow-rays.png" class="icon" />
+                        <span class="text">รับแผนและคำปรึกษาฟรี</span>
+                      </nuxt-link>
+                      <a href="tel:0819884107" class="btn-white-violet text-s-24 font-bd py-2 ms-3"
+                        data-tag="hero_call_button_desktop"><img class="me-2"
+                          src="~/assets/SolutionsWizemoves/Consulting/chat-bubble-left-right-color.png"
+                          alt="chat-bubble-left-right-color.png.png" />081 988 4107
+                      </a>
+                    </div>
+                  </td>
+                </table>
+              </div>
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-5 col-sm-6 col-6 d-flex">
+                <img class="img-fluid mt-auto" src="~/assets/SolutionsWizemoves/Consulting/cover-WM-2 1.png"
+                  alt="cover-WM-2 1.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-img-mobile d-block d-md-none" style="height: 652px;margin-top:64px">
+        <div class="bg-color-mobile">
+          <div class="container p-4">
+            <div class="row">
+              <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <ol class="font-md mt-2">
+                  <ul class="breadcrumb">
+                    <li>
+                      <img class="mb-1 me-1" src="~/assets/SolutionsWizemoves/home.png" /><nuxt-link
+                        @click="scrollToTop" :to="localePath('/')" data-tag="breadcrumb_business_mobile"><span
+                          class="text-s-20 color-FFFFFF">Business</span></nuxt-link> <img class="mb-1"
+                        src="~/assets/SolutionsWizemoves/chevron-right.png" />  
+                    </li>
+                    <li>
+                      <nuxt-link @click="scrollToTop" :to="localePath('/solutions/wizemoves')"
+                        data-tag="breadcrumb_wizemoves_mobile"><span
+                          class="text-s-20 color-FFFFFF ms-1">WizeMoves</span></nuxt-link> <img class="mb-1"
+                        src="~/assets/SolutionsWizemoves/chevron-right.png" />
+                    </li>
+                    <li>
+                      <span class="text-s-20 color-FFFFFF ms-1">Business Consulting</span>
+                    </li>
+                  </ul>
+                </ol>
+                <div class="mt-3">
+                  <h1 class="font-bd text-s-44 mb-0 color-FFFFFF">
+                    Business Consulting
+                  </h1>
+                </div>
+                <p class="font-bd text-s-24 mt-2 mb-2 color-FFFFFF">
+                  ที่ปรึกษาธุรกิจด้านกลยุทธ์ ผู้ช่วยเพิ่มยอดขาย<br />
+                  ให้เป้าหมายของคุณเป็นจริง
+                </p>
+                <p class="text-s-20 mb-1 color-FFFFFF">
+                  เราคือที่ปรึกษาด้านกลยุทธ์ที่ช่วยเพิ่มยอดขาย 100 %
+                  ภายในเวลา 1 ปี เราพร้อมเติบโตไปกับลูกค้า
+                  ที่ปรึกษาที่พร้อมสร้างกลยุทธ์ให้เกิดขึ้นจริงและเปลี่ยนเป็นยอดขายได้
+                </p>
+                <div class="d-flex flex-wrap mt-3">
+                  <div class="badge-wizemoves">
+                    <img src="~/assets/SolutionsWizemoves/Consulting/Subtract.png" alt="Subtract.png" class="icon" />
+                    <span class="text text-s-18 font-df">วางแผนธุรกิจ</span>
+                  </div>
+                  <div class="badge-wizemoves ms-2">
+                    <img src="~/assets/SolutionsWizemoves/Consulting/Subtract.png" alt="Subtract.png" class="icon" />
+                    <span class="text text-s-18 font-df">การตลาดออนไลน์</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap mt-4">
+                  <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
+                    class="btn-gradient text-s-20 font-md py-2" data-tag="hero_get_free_consultation_mobile">
+                    <img src="~/assets/SolutionsWizemoves/Consulting/cursor-arrow-rays.png" alt="cursor-arrow-rays.png"
+                      class="icon" />
+                    <span class="text">รับแผนและคำปรึกษาฟรี</span>
+                  </nuxt-link>
+                  <a href="tel:0819884107" class="btn-white-violet text-s-20 font-bd py-2 ms-3"
+                    data-tag="hero_call_button_mobile"><img class="me-2"
+                      src="~/assets/SolutionsWizemoves/Consulting/chat-bubble-left-right-color.png"
+                      alt="chat-bubble-left-right-color.png.png" />081 988 4107
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center" style="min-height: 300px;">
+                  <img class="img-fluid mx-auto d-block img-360" src="~/assets/SolutionsWizemoves/Consulting/hero.png"
+                    alt="banner-m.png" style="max-width: 100%; height: auto;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="scroll-div animate__animated  animate__fadeIn" v-if="showDiv"
+      style="position: fixed;top: 0px;z-index: 999;width: 100%;background: #7C3AED;">
+      <nav class="navbar navbar-expand-lg ps-md-0 pe-md-0 ps-3 pe-3 p-0"
+        style="z-index: 9999;box-shadow: 0px 1px 3px 0px #7B64AF12,0px 5px 5px 0px #7B64AF0F,0px 12px 7px 0px #7B64AF0A,0px 20px 8px 0px #7B64AF03,0px 32px 9px 0px #7B64AF00;">
+        <div class="container">
+          <div class="ml-2 d-lg-block d-none">
+            <ul class="navbar-nav text-s-24 text-w-500">
+              <div v-for="(button, index) in buttons" :key="index"
+                :class="{ 'nav-active': activeSection === button.name }" @click="setActiveButton(index)">
+                <a :href="button.id" :data-tag="`navbar_scroll_${button.name}`">
+                  <li class="nav-item d-flex ps-3 pe-3" style="padding-top: 19px;padding-bottom: 19px;">
+                    <div class="nav-link p-0 text-s-24 m-auto">{{ button.label }}</div>
+                  </li>
+                </a>
+              </div>
+            </ul>
+          </div>
+          <div class="ml-2 d-lg-none d-block">
+            <select @change="handleChange(activeSection)" v-model="activeSection"
+              class="form-select custom-select mt-3 mb-3 text-s-24 font-md custom-select"
+              aria-label="Default select example" data-tag="navbar_scroll_dropdown">
+              <option v-for="(button, index) in buttons" :key="index" :value="button.name">{{ button.label }}</option>
+            </select>
+          </div>
+          <div class="mt-1">
+            <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+              class="btn-violet-white text-s-24 font-df p-1 ps-3 pe-3" data-tag="navbar_scroll_free_consultation"><img
+                class="me-2" src="~/assets/SolutionsWizemoves/Consulting/chat-bubble-left-right-color.png"
+                alt="chat-bubble-left-right-color.png.png" />ปรึกษาฟรี
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="PainPoints" class="section-active pb-lg-5 pb-0">
+      <div class="container pb-0 p-md-0 p-4">
+        <div class="row pt-5">
+          <div class="col-12 mt-md-5 mt-0 text-center fade-in-up" v-intersect>
+            <div class="m-auto" style="
+                  width: 115px;
+                  border: 2px solid #00000008;
+                  backdrop-filter: blur(10px);
+                  border-radius: 32px;
+                  background: #fff;
+                ">
+              <p class="text-ranbow text-s-24 text-w-700 m-0 p-1">Pain Points</p>
+            </div>
+            <h2 class="text-s-60 text-w-700 color-1F2937 mt-5 d-none d-lg-block">
+              ธุรกิจของคุณกำลังโตช้ากว่าที่ควรหรือไม่
+            </h2>
+            <h2 class="text-s-44 text-w-700 color-1F2937 mt-5 d-block d-lg-none">
+              ธุรกิจของคุณกำลังโตช้า<br />กว่าที่ควรหรือไม่
+            </h2>
+
+            <p class="text-s-24 mt-3 d-none d-lg-block">การขยายธุรกิจให้ประสบความสำเร็จ
+              <strong>ไม่ได้ขึ้นอยู่กับแค่ผลิตภัณฑ์หรือบริการ</strong> แต่ต้องอาศัย <strong>กลยุทธ์ที่แม่นยำ
+                ข้อมูลเชิงลึก และการดำเนินงานที่มีประสิทธิภาพ</strong></p>
+            <p class="text-s-24 mt-3 text-md-center text-start mt-3 d-block d-lg-none">การขยายธุรกิจให้ประสบความสำเร็จ
+              ไม่ได้ขึ้นอยู่กับแค่ผลิต-ภัณฑ์หรือบริการ แต่ต้องอาศัย กลยุทธ์ที่แม่นยำ ข้อมูลเชิงลึก
+              และการดำเนินงานที่มีประสิทธิภาพ</p>
+          </div>
+          <div class="row mt-md-5 mt-2 mb-3 fade-in-up" v-intersect>
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 p-3">
+              <div class="card-1 p-1 d-none d-lg-block">
+                <div class="card-body">
+                  <img class="img-fluid px-md-0 px-4 py-md-0 py-2 pt-3"
+                    src="~/assets/SolutionsWizemoves/Consulting/arrow-trending-down.png" alt="arrow-trending-down.png">
+                  <p class="text-s-36 font-bd color-1F2937 mb-2 mt-4">ยอดขายไม่เป็นไปตาม<br /> เป้าหมาย</p>
+                  <p class="text-s-24 font-df color-1F2937 mb-0">ขาดกลยุทธ์การตลาดและการตั้งราคา<br /> ที่เหมาะสม</p>
+                </div>
+              </div>
+              <div class="card-1 d-block d-lg-none">
+                <div class="card-body p-3 d-flex align-items-center justify-content-center">
+                  <img class="img-fluid" height="100%"
+                    src="~/assets/SolutionsWizemoves/Consulting/arrow-trending-down.png" alt="arrow-trending-down.png">
+                  <div class="ms-3">
+                    <p class="text-s-24 font-bd color-1F2937 mb-1">ยอดขายไม่เป็นไปตามเป้าหมาย</p>
+                    <p class="text-s-20 font-df color-1F2937 mb-1">ขาดกลยุทธ์การตลาดและการตั้งราคาที่เหมาะสม</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 p-3">
+              <div class="card-1 p-1 d-none d-lg-block">
+                <div class="card-body">
+                  <img class="img-fluid px-md-0 px-4 py-md-0 py-2 pt-3"
+                    src="~/assets/SolutionsWizemoves/Consulting/ICON4 1.png" alt="ICON4 1.png">
+                  <p class="text-s-36 font-bd color-1F2937 mb-2 mt-4">ใช้ Influencer Marketing <br /> แต่ไม่เห็นผลชัดเจน
+                  </p>
+                  <p class="text-s-24 font-df color-1F2937 mb-0">ขาดกลยุทธ์ Performance Marketing</p>
+                </div>
+              </div>
+              <div class="card-1 d-block d-lg-none">
+                <div class="card-body p-3 d-flex align-items-center">
+                  <img class="img-fluid" height="100%" src="~/assets/SolutionsWizemoves/Consulting/ICON4 1.png"
+                    alt="ICON4 1.png">
+                  <div class="ms-3">
+                    <p class="text-s-24 font-bd color-1F2937 mb-1" style="line-height: 100%;">ใช้ Influencer Marketing
+                      <br /> แต่ไม่เห็นผลชัดเจน</p>
+                    <p class="text-s-20 font-df color-1F2937 mb-1">ขาดกลยุทธ์ Performance Marketing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 p-3">
+              <div class="card-1 p-1 d-none d-lg-block">
+                <div class="card-body">
+                  <img class="img-fluid px-md-0 px-4 py-md-0 py-2 pt-3"
+                    src="~/assets/SolutionsWizemoves/Consulting/ICON6 1.png" alt="ICON6 1.png">
+                  <p class="text-s-36 font-bd color-1F2937 mb-2 mt-4">ขยายตลาดได้ช้า</p>
+                  <p class="text-s-24 font-df color-1F2937 mt-4 pt-3 mb-0">ขาดข้อมูลหรือกลยุทธ์เชิงลึกที่ช่วยลดความ
+                    เสี่ยงในการขยายธุรกิจ</p>
+                </div>
+              </div>
+              <div class="card-1 d-block d-lg-none">
+                <div class="card-body p-3 d-flex align-items-center">
+                  <img class="img-fluid" height="100%" src="~/assets/SolutionsWizemoves/Consulting/ICON6 1.png"
+                    alt="ICON6 1.png">
+                  <div class="ms-3">
+                    <p class="text-s-24 font-bd color-1F2937 mb-1">ขยายตลาดได้ช้า</p>
+                    <p class="text-s-20 font-df color-1F2937 mb-1">ขาดข้อมูลหรือกลยุทธ์เชิงลึกที่ช่วยลดความ
+                      เสี่ยงในการขยายธุรกิจ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 p-3">
+              <div class="card-1 p-1 d-none d-lg-block">
+                <div class="card-body">
+                  <img class="img-fluid px-md-0 px-4 py-md-0 py-2 pt-3"
+                    src="~/assets/SolutionsWizemoves/Consulting/user-group.png" alt="user-group.png">
+                  <p class="text-s-36 font-bd color-1F2937 mb-2 mt-4">ไม่รู้ว่าลูกค้าของคุณคือใคร</p>
+                  <p class="text-s-24 font-df color-1F2937 mt-4 pt-3 mb-0">ข้อมูลกระจัดกระจายทำให้ตัดสินใจผิดพลาด</p>
+                </div>
+              </div>
+              <div class="card-1 d-block d-lg-none">
+                <div class="card-body p-3 d-flex align-items-center">
+                  <img class="img-fluid" height="100%" src="~/assets/SolutionsWizemoves/Consulting/user-group.png"
+                    alt="user-group.png">
+                  <div class="ms-3">
+                    <p class="text-s-24 font-bd color-1F2937 mb-1">ไม่รู้ว่าลูกค้าของคุณคือใคร</p>
+                    <p class="text-s-20 font-df color-1F2937 mb-1">ข้อมูลกระจัดกระจายทำให้ตัดสินใจผิดพลาด</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 fade-in-up" v-intersect>
+          <div class="col-12 text-center">
+            <p class="text-s-24">หากปัญหาเหล่านี้ตรงกับธุรกิจของคุณ นี่ไม่ใช่ปัญหาเชิงการจัดการ แต่<span
+                class="font-bd">เป็นปัญหาเชิงกลยุทธ์...</span></p>
+          </div>
+          <div class="col-12 text-center mt-3">
+            <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
+              class="btn-gradient text-s-24 font-md py-2" data-tag="pain_points_get_free_consultation">
+              <span class="text">ปรึกษากลยุทธ์กับทีมฟรี</span>
+            </nuxt-link>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <img class="img-fluid" src="~/assets/SolutionsWizemoves/Consulting/wizemoves.png" alt="wizemoves.png">
+          </div>
+          <div class="col-lg-6 col-12 d-flex align-items-center">
+            <div class="text-center">
+              <img class="img-fluid" src="~/assets/SolutionsWizemoves/Consulting/Consult.png" alt="Consult.png">
+              <p class="text-s-44 font-bd mt-4">WizeMoves Consult ช่วยคุณแก้ปัญหาเหล่านี้ได้</p>
+              <p class="text-s-24 mb-lg-4 mb-4">ด้วยกลยุทธ์การตลาดที่ ขับเคลื่อนด้วย Data-Driven Strategy พร้อมกับ
+                Social Listening และ Performance Marketing ที่ช่วยให้ธุรกิจของคุณเติบโตอย่างมีประสิทธิภาพ</p>
+              <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
+                class="btn-gradient text-s-24 font-md py-2" data-tag="pain_points_section_get_free_consultation">
+                <span class="text">รับคำปรึกษากับผู้เชี่ยวชาญฟรี</span>
+              </nuxt-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="WhyUS" class="pt-5"></div>
+    <section id="WhyUS" class="bg-img-3 mb-md-0 mb-5 section-active">
+      <div class="pt-5 pb-5">
+        <div class="container">
+          <div class="d-none d-md-block">
+            <div class="row py-80">
+              <div class="col-12 text-center mb-5">
+                <div class="border-ranbow d-inline-flex mt-5">
+                  <span class="text-ranbow text-s-24 text-w-700 m-0">Why Us</span>
+                </div>
+              </div>
+              <div class="col-6 col-6-custom-1 color-FFFFFF d-flex fade-in-up" v-intersect>
+                <div class="text-start">
+                  <h2 class="text-s-60 font-bd mb-0 d-lg-block d-md-none">
+                    ทำไมผู้ประกอบการไทยถึงไว้ใจ<br /> WizeMoves มากว่า 10 ปี?
+                  </h2>
+                  <h2 class="text-s-44 font-bd mb-0 d-lg-none d-md-block">
+                    ทำไมผู้ประกอบการไทย<br />ถึงไว้ใจ WizeMoves<br /> มากกว่า 10 ปี?
+                  </h2>
+                </div>
+              </div>
+              <div class="col-6 col-6-custom-2 fade-in-up" v-intersect>
+                <CardBgImg type="BusinessConsulting" />
+              </div>
+            </div>
+          </div>
+          <div class="row ps-4 pe-4 d-block d-md-none">
+            <div class="col-12 text-center pt-4 pb-4">
+              <div class="border-ranbow d-inline-flex">
+                <span class="text-ranbow text-s-24 text-w-700 m-0">Why Us</span>
+              </div>
+            </div>
+            <div class="col-12 color-FFFFFF fade-in-up" v-intersect>
+              <div class="text-start">
+                <h2 class="text-s-44 font-bd mb-5">
+                  <h2 class="text-s-44 font-bd mb-0">
+                    ทำไมผู้ประกอบการไทยถึงไว้ใจ<br /> WizeMoves มากว่า 10 ปี?
+                  </h2>
+                </h2>
+              </div>
+            </div>
+            <div class="col-12 fade-in-up" v-intersect>
+              <CardBgImg type="BusinessConsulting" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-lg-5 pt-md-5 ps-lg-4 pe-lg-4 mt-0 pt-0 ps-4 pe-4">
+      <div class="cart-img-text">
+        <div class="cart-color-text">
+          <div class="row d-none d-md-block">
+            <div class="col-12 text-center color-FFFFFF d-flex" style="height: 370px">
+              <div class="mt-auto mx-auto d-lg-block d-md-none">
+                <h2 class="text-s-60 mb-0 font-bd mt-auto mx-auto">
+                  WizeMoves ที่ปรึกษาธุรกิจด้านกลยุทธ์ และขยายธุรกิจอย่างยั่งยืน
+                </h2>
+                <p class="text-s-28 mb-0">เพราะกลยุทธ์ที่ดี ไม่ได้วัดจากยอดขายระยะสั้นแต่ต้องสร้างการเติบโตที่ยั่งยืน
+                </p>
+              </div>
+              <div class="mt-auto mx-auto d-lg-none d-md-block">
+                <h2 class="text-s-44 mb-0 font-bd mt-auto mx-auto">
+                  WizeMoves ที่ปรึกษาธุรกิจ<br />ด้านกลยุทธ์ และขยายธุรกิจอย่างยั่งยืน
+                </h2>
+                <p class="text-s-20 mb-0 mt-3">เพราะกลยุทธ์ที่ดี
+                  ไม่ได้วัดจากยอดขายระยะสั้นแต่ต้องสร้างการเติบโตที่ยั่งยืน</p>
+              </div>
+            </div>
+          </div>
+          <div class="row d-block d-md-none">
+            <div class="col-12 text-center color-FFFFFF d-flex ps-3 pe-3" style="height: 500px">
+              <div class="mt-auto mx-auto">
+                <h2 class="text-s-44 mb-0 font-bd mt-auto mx-auto">
+                  WizeMoves<br /> ที่ปรึกษาธุรกิจด้านกลยุทธ์<br /> และขยายธุรกิจอย่างยั่งยืน
+                </h2>
+                <p class="text-s-20 mt-3 mb-0">เพราะกลยุทธ์ที่ดี
+                  ไม่ได้วัดจากยอดขายระยะสั้น<br />แต่ต้องสร้างการเติบโตที่ยั่งยืน</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Services" class="section-spacing section-active">
+      <div class="container ps-md-0 pe-md-0 ps-4 pe-4">
+        <div class="row">
+          <div class="col-12 text-center mt-5 mb-5 pb-5">
+            <div class="m-auto" style="
+                width: 95px;
+                border: 2px solid #00000008;
+                backdrop-filter: blur(10px);
+                border-radius: 32px;
+                background: #fff;
+              ">
+              <p class="text-ranbow text-s-24 text-w-700 m-0 p-1">Services</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <p class="text-s-60 font-bd mb-0 d-none d-xl-block" style="line-height: 120%;">
+              ปลดล็อกศักยภาพธุรกิจ<br />ด้วยแนวทางที่ปรึกษาเชิงกลยุทธ์</p>
+            <p class="text-s-44 font-bd mb-0 d-none d-md-block d-xl-none">
+              ปลดล็อกศักยภาพธุรกิจ<br />ด้วยแนวทางที่ปรึกษา<br />เชิงกลยุทธ์</p>
+            <p class="text-s-44 font-bd mb-0 d-block d-md-none">ปลดล็อกศักยภาพธุรกิจด้วย<br />แนวทางที่ปรึกษาเชิงกลยุทธ์
+            </p>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="d-none d-xl-block">
+              <p class="text-s-24 font-df mb-0 mt-3"><span class="font-bd">WizeMoves</span>
+                ไม่ใช่แค่ที่ปรึกษาธุรกิจทั่วไป แต่เป็น <span class="font-bd">“พาร์ทเนอร์ธุรกิจ”</span>
+                ที่ช่วยคุณวางกลยุทธ์ ตั้งแต่ <span class="font-bd">การขยาย ตลาด, พัฒนาแบรนด์, จัดการ Performance
+                  Marketing, ไปจนถึง Loyalty & Retention Strategy</span></p>
+              <p class="text-s-24 font-df mb-0 mt-4">เรานำแนวคิด <span class="font-bd">Data-Driven Decision
+                  Making</span> มาใช้ เพื่อให้มั่นใจว่าธุรกิจของคุณจะเติบโตได้อย่างมี ประสิทธิภาพ <span
+                  class="font-bd">ไม่ใช่แค่เพิ่มยอดขาย แต่สร้างความแข็งแกร่งให้กับธุรกิจในระยะยาว</span></p>
+            </div>
+            <div class="d-block d-xl-none">
+              <p class="text-s-20 font-df mb-0 mt-2">WizeMoves ไม่ใช่แค่ที่ปรึกษาธุรกิจทั่วไป แต่เป็น “พาร์ทเนอร์ธุรกิจ”
+                ที่ช่วยคุณวางกลยุทธ์ ตั้งแต่ การขยาย ตลาด, พัฒนาแบรนด์, จัดการ Performance Marketing, ไปจนถึง Loyalty &
+                Retention Strategy</p>
+              <p class="text-s-20 font-df mb-0 mt-4">เรานำแนวคิด Data-Driven Decision Making มาใช้ เพื่อให้มั่นใจว่า
+                ธุรกิจของคุณจะเติบโตได้อย่างมี ประสิทธิภาพ ไม่ใช่แค่เพิ่มยอดขาย
+                แต่สร้างความแข็งแกร่งให้กับธุรกิจในระยะยาว</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 pt-5">
+          <div class="row pt-lg-5 mt-lg-5 pt-0 mt-0">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 pe-0 ps-0 pb-200">
+
+              <img class="img-fluid mb-4 d-block d-md-none"
+                src="~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air.png" alt="Device-Macbook-Air.png" />
+              <span class="text-s-24 font-md text-hl">ที่ปรึกษาการวางแผนธุรกิจและกลยุทธ์การเติบโต</span>
+              <p class="text-s-52 font-md color-1F2937 mb-0 mt-4">
+                Strategic Planning & Scaling Consulting
+              </p>
+              <p class="text-s-24 color-1F2937 mb-0 mt-3">
+                ธุรกิจที่ต้องการเติบโตต้องการ มากกว่าการตลาด และต้องมี Business Roadmap ที่ชัดเจน เพื่อขับเคลื่อน
+                ธุรกิจไปในทิศทางที่ถูกต้อง WizeMoves ช่วยคุณวางแผนกลยุทธ์การเติบโตทั้งในระยะสั้นและระยะยาว
+              </p>
+              <div class="row mt-4 space-tigger">
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/carbon_model-builder.png"
+                        alt="carbon_model-builder.png">
+                      <span class="ms-2 m-auto">Business Model Optimization</span>
+                    </div>
+                    <p class="text-s-24 font-df pe-4">ตรวจสอบ Value Proposition, Revenue Streams และ Cost Structure
+                      เพื่อให้โมเดลธุรกิจ แข็งแกร่งและทำกำไร ได้อย่างยั่งยืน</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/icon-park-outline_user-positioning.png"
+                        alt="icon-park-outline_user-positioning.png">
+                      <span class="ms-2 m-auto">Go-to-Market Strategy (GTM)</span>
+                    </div>
+                    <p class="text-s-24 font-df">วิเคราะห์โอกาสของธุรกิจ, กำหนด Target Market, Positioning และ Pricing
+                      Strategy เพื่อลดความ เสี่ยง ในการเข้าไปในตลาดใหม่</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/Icon.png" alt="Icon.png">
+                      <span class="ms-2 m-auto">Revenue Stream Diversification</span>
+                    </div>
+                    <p class="text-s-24 font-df pe-4">ประเมินและออกแบบ Business Expansion Model เช่น การเพิ่มสินค้าใหม่
+                      ขยายสินค้าสู่ Modern Trade, B2B, B2C</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
+                    class="btn-transparent-violet text-s-24 font-md py-2"
+                    data-tag="services_strategic_planning_free_consultation">
+                    <span class="text">ปรึกษากลยุทธ์ฟรี</span>
+                  </nuxt-link>
+                </div>
+              </div>
+
+
+              <div class="space-services"></div>
+              <img class="img-fluid mb-4 d-block d-md-none"
+                src="~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air1.png" alt="Device-Macbook-Air.png" />
+              <span class="text-s-24 font-md text-hl">ที่ปรึกษาการขยายตลาดและพัฒนาสินค้าใหม่</span>
+              <p class="text-s-52 font-md color-1F2937 mb-0 mt-4">
+                Market Expansion<br class="d-none d-lg-block" />
+                & New Product Development (NPD)
+              </p>
+              <p class="text-s-24 color-1F2937 mb-0 mt-3">
+                การขยายธุรกิจไม่ใช่แค่ "เพิ่มยอดขาย" แต่ต้องเป็น การวางแผนเชิงกลยุทธ์ ตั้งแต่ Market Research, Market
+                Gap Analysis, Product Development ไปจนถึง Channel Strategy
+              </p>
+              <div class="row mt-4 space-tigger">
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/search.png" alt="search.png">
+                      <span class="ms-2 m-auto">Market Feasibility Study</span>
+                    </div>
+                    <p class="text-s-24 font-df pe-4">ศึกษาความต้องการของตลาด (Market Demand), พฤติกรรมลูกค้า (Customer
+                      Insights) และศักยภาพ การแข่งขัน (Competitiveness)</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/view-columns.png" alt="view-columns.png">
+                      <span class="ms-2 m-auto">Competitive Benchmarking</span>
+                    </div>
+                    <p class="text-s-24 font-df">วิเคราะห์ 3C (Customer, Company, Competitor) เพื่อหา Winning Zone
+                      ในการสร้างกลยุทธ์การแข่งขัน</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/chat.png" alt="chat.png">
+                      <span class="ms-2 m-auto">Product-Market Fit Analysis</span>
+                    </div>
+                    <p class="text-s-24 font-df pe-4">ใช้ Customer Feedbacks & Insights และ Data Analytics
+                      เพื่อปรับสินค้าให้เหมาะกับตลาด เป้าหมาย ก่อนเปิดตัว</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/copy.png" alt="copy.png">
+                      <span class="ms-2 m-auto">Go-to-Market Execution</span>
+                    </div>
+                    <p class="text-s-24 font-df">วางแผน Launch Roadmap, Marketing Mix และ Distribution Channels
+                      เพื่อให้สินค้าทำตลาดได้ อย่างมีประสิทธิภาพ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
+                    class="btn-transparent-violet text-s-24 font-md py-2"
+                    data-tag="services_market_expansion_free_consultation">
+                    <span class="text">ปรึกษากลยุทธ์ฟรี</span>
+                  </nuxt-link>
+                </div>
+              </div>
+
+
+
+              <div class="space-services"></div>
+              <img class="img-fluid mb-4 d-block d-md-none"
+                src="~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air2.png" alt="Device-Macbook-Air.png" />
+              <span class="text-s-24 font-md text-hl">ที่ปรึกษากลยุทธ์การสร้าง Customer Loyalty</span>
+              <p class="text-s-52 font-md color-1F2937 mb-0 mt-4">
+                Customer Loyalty & Retention Consulting
+              </p>
+              <p class="text-s-24 color-1F2937 mb-0 mt-3">
+                ธุรกิจที่เติบโตอย่างยั่งยืนไม่ได้มาจากลูกค้าใหม่เพียงอย่างเดียว แต่ต้องมี กลยุทธ์รักษาลูกค้าเก่า
+                ให้กลับมาซื้อ ซ้ำ และสร้าง Brand Advocacy
+              </p>
+              <div class="row mt-4 space-tigger">
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/trophy.png" alt="trophy.png">
+                      <span class="ms-2 m-auto">Loyalty Program Design</span>
+                    </div>
+                    <p class="text-s-24 font-df pe-4">ศึกษาความต้องการของตลาด (Market Demand), พฤติกรรมลูกค้า (Customer
+                      Insights) และศักยภาพ การแข่งขัน (Competitiveness)</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/jigsaw.png" alt="jigsaw.png">
+                      <span class="ms-2 m-auto">Competitive Benchmarking</span>
+                    </div>
+                    <p class="text-s-24 font-df">ตรวจสอบ Customer Behavior, Touchpoints และ Exit Triggers
+                      เพื่อปรับปรุงกลยุทธ์การรักษาลูกค้า</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/view-columns.png" alt="view-columns.png">
+                      <span class="ms-2 m-auto">CRM Optimization</span>
+                    </div>
+                    <p class="text-s-24 font-df pe-4">ใช้ Data-Driven Insights มาปรับกลยุทธ์การใช้ CRM
+                      ให้เกิดประสิทธิภาพสูงสุด และราบรื่นต่อลูกค้าที่สุด</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
+                    class="btn-transparent-violet text-s-24 font-md py-2"
+                    data-tag="services_customer_loyalty_free_consultation">
+                    <span class="text">ปรึกษากลยุทธ์ฟรี</span>
+                  </nuxt-link>
+                </div>
+              </div>
+
+
+
+              <div class="space-services"></div>
+              <img class="img-fluid mb-4 d-block d-md-none"
+                src="~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air4.png" alt="Device-Macbook-Air.png" />
+              <span class="text-s-24 font-md text-hl">ที่ปรึกษากลยุทธ์ Influencer Marketing</span>
+              <p class="text-s-52 font-md color-1F2937 mb-0 mt-4">
+                Influencer Marketing
+              </p>
+              <p class="text-s-24 color-1F2937 mb-0 mt-3">
+                Influencer Marketing ไม่ใช่แค่ "จ้าง KOL" แล้วจบแต่ต้องมี กลยุทธ์ที่ชัดเจน เพื่อให้ได้ผลลัพธ์เชิงธุรกิจ
+                ที่ต้องการ
+              </p>
+              <div class="row mt-4 space-tigger">
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/sparkles.png" alt="sparkles.png">
+                      <span class="ms-2 m-auto">Influencer Discovery & Selection</span>
+                    </div>
+                    <p class="text-s-24 font-df pe-4">จัดหาอินฟลูเอนเซอร์ที่เหมาะกับแบรนด์หรือสินค้า (Influencer Fit)
+                      โดยมีพร้อมให้เลือกเลย กว่า 1,000 รายชื่อ</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/viewfinder-dot.png" alt="viewfinder-dot.png">
+                      <span class="ms-2 m-auto">Influencer Campaign Strategy</span>
+                    </div>
+                    <p class="text-s-24 font-df">วิเคราะห์ลูกค้าเพื่อนำ Insight มาวางกลยุทธ์ในการทำ Influencer Campaign
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 pe-0">
+                  <div class="card card-01">
+                    <div class="card-body d-flex">
+                      <img src="~/assets/SolutionsWizemoves/Consulting/radio.png" alt="radio.png">
+                      <span class="ms-2 m-auto">Social Listening & Marketing Tool</span>
+                    </div>
+                    <p class="text-s-24 font-df pe-4">ใช้ Social Listening ติดตามแคมเปญและ Visualize ข้อมูลผ่าน
+                      Marketing Tool</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
+                    class="btn-transparent-violet text-s-24 font-md py-2"
+                    data-tag="services_influencer_marketing_free_consultation">
+                    <span class="text">ปรึกษากลยุทธ์ฟรี</span>
+                  </nuxt-link>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-none d-md-block">
+              <div class="sticky-macbook">
+                <transition name="fade" mode="out-in"> <img class="p-xl-4 p-0 fade-transition" :key="currentImage"
+                    :src="currentImage" :alt="currentImage" />
+                </transition>
+                <img class="p-xl-4 p-0" src="~/assets/SolutionsWizemoves/Consulting/Macbook Air.png" alt="Macbook Air"
+                  style="position: absolute;max-width: 95%;width: 100%;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="OurSolution" class="section-active">
+      <div class="container">
+        <div class="container pb-md-5 pb-0 p-md-0 p-4">
+          <div class="row">
+            <div class="col-12 mt-0 text-center fade-in-up" v-intersect>
+              <div class="m-auto" style="
+                  width: 110px;
+                  border: 2px solid #00000008;
+                  backdrop-filter: blur(10px);
+                  border-radius: 32px;
+                  background: #fff;
+                ">
+                <p class="text-ranbow text-s-24 text-w-700 m-0 p-1">Process</p>
+              </div>
+              <h2 class="text-s-60 text-w-700 color-1F2937 mt-3 d-none d-xl-block">
+                ขั้นตอนการให้คำปรึกษา
+              </h2>
+              <h2 class="text-s-44 text-w-700 color-1F2937 mt-3 d-block d-xl-none">
+                ขั้นตอนการให้คำปรึกษา
+              </h2>
+            </div>
+            <div class="row mt-xl-5 mt-2 mb-3 fade-in-up" v-intersect>
+              <div class="col-3 align-self-center d-none d-xl-block">
+                <p class="text-s-44 font-bd mb-0">ขั้นตอนการ</p>
+                <p class="text-s-44 font-bd mb-0">ทำงาน<span class="text-ranbow">หลังเซ็นสัญญา</span></p>
+              </div>
+              <div class="col-12 text-center d-block d-xl-none">
+                <p class="text-s-36 font-bd mb-4 mt-4">ขั้นตอนการทำงาน<span class="text-ranbow">หลังเซ็นสัญญา</span></p>
+              </div>
+              <div class="col-xl-9 col-12 d-none d-md-block">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="d-flex justify-content-center">
+                      <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'รับบรีฟ' }">
+                        <img @mouseover="active = 'รับบรีฟ'"
+                          src="~/assets/SolutionsWizemoves/Consulting/clipboard-document-list.png" alt="profile"
+                          class="inner-circle" :class="{ 'inner-circle-hover': active === 'รับบรีฟ' }" />
+                      </div>
+                      <img class="img-fluid ms-2 icon-process" src="~/assets/SolutionsWizemoves/Consulting/Line.png"
+                        alt="Line.png">
+                    </div>
+                    <p class="text-s-36 font-md mt-4 mb-2">รับบรีฟ</p>
+                    <p class="text-s-24 font-df">ทีมที่ปรึกษาและธุรกิจประชุมเพื่อรับบรีฟงาน</p>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex justify-content-center">
+                      <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วางแผนกลยุทธ์' }">
+                        <img @mouseover="active = 'วางแผนกลยุทธ์'"
+                          src="~/assets/SolutionsWizemoves/Consulting/chat-bubble-left-right.png" alt="profile"
+                          class="inner-circle" :class="{ 'inner-circle-hover': active === 'วางแผนกลยุทธ์' }" />
+                      </div>
+                      <img class="img-fluid ms-2 icon-process" src="~/assets/SolutionsWizemoves/Consulting/Line.png"
+                        alt="Line.png">
+                    </div>
+                    <p class="text-s-36 font-md mt-4 mb-2">วางแผนกลยุทธ์</p>
+                    <p class="text-s-24 font-df">ทีมที่ปรึกษาศึกษาธุรกิจวางแผนกลยุทธ์และจัดทำแผนงาน</p>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex justify-content-center">
+                      <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'ดำเนินการ' }">
+                        <img @mouseover="active = 'ดำเนินการ'"
+                          src="~/assets/SolutionsWizemoves/Consulting/cube-transparent.png" alt="profile"
+                          class="inner-circle" :class="{ 'inner-circle-hover': active === 'ดำเนินการ' }" />
+                      </div>
+                      <img class="img-fluid ms-2 icon-process" src="~/assets/SolutionsWizemoves/Consulting/Line.png"
+                        alt="Line.png">
+                    </div>
+                    <p class="text-s-36 font-md mt-4 mb-2">ดำเนินการ</p>
+                    <p class="text-s-24 font-df">ทีมที่ปรึกษาลงมือดำเนินการตามแผนงาน</p>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex justify-content-start">
+                      <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วัดผลและปรับปรุง' }">
+                        <img @mouseover="active = 'วัดผลและปรับปรุง'"
+                          src="~/assets/SolutionsWizemoves/Consulting/presentation-chart-bar.png" alt="profile"
+                          class="inner-circle" :class="{ 'inner-circle-hover': active === 'วัดผลและปรับปรุง' }" />
+                      </div>
+                    </div>
+                    <p class="text-s-36 font-md mt-4 mb-2">วัดผลและปรับปรุง</p>
+                    <p class="text-s-24 font-df">อัพเดตการทำงานรายสัปดาห์ วัดผลและปรับปรุง</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 d-block d-md-none">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex flex-column align-items-center">
+                        <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'รับบรีฟ' }">
+                          <img @mouseover="active = 'รับบรีฟ'"
+                            src="~/assets/SolutionsWizemoves/Consulting/clipboard-document-list.png" alt="profile"
+                            class="inner-circle" :class="{ 'inner-circle-hover': active === 'รับบรีฟ' }" />
+                        </div>
+                        <img class="img-fluid mt-2" src="~/assets/SolutionsWizemoves/Consulting/Line-m.png"
+                          alt="Line.png">
+                      </div>
+                      <div class="ms-3" style="margin-top: -12px;">
+                        <p class="font-md mb-2" style="font-size: 24px;line-height: 24px;">รับบรีฟ</p>
+                        <p class="text-s-20 font-df">ทีมที่ปรึกษาและธุรกิจประชุมเพื่อรับบรีฟงาน</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex align-items-center mt-2">
+                      <div class="d-flex flex-column align-items-center">
+                        <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วางแผนกลยุทธ์' }">
+                          <img @mouseover="active = 'วางแผนกลยุทธ์'"
+                            src="~/assets/SolutionsWizemoves/Consulting/chat-bubble-left-right.png" alt="profile"
+                            class="inner-circle" :class="{ 'inner-circle-hover': active === 'วางแผนกลยุทธ์' }" />
+                        </div>
+                        <img class="img-fluid mt-2" src="~/assets/SolutionsWizemoves/Consulting/Line-m.png"
+                          alt="Line.png">
+                      </div>
+                      <div class="ms-3" style="margin-top: -12px;">
+                        <p class="font-md mb-2" style="font-size: 24px;line-height: 24px;">วางแผนกลยุทธ์</p>
+                        <p class="text-s-20 font-df">ทีมที่ปรึกษาศึกษาธุรกิจวางแผนกลยุทธ์และจัดทำแผนงาน</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex align-items-center mt-2">
+                      <div class="d-flex flex-column align-items-center">
+                        <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'ดำเนินการ' }">
+                          <img @mouseover="active = 'ดำเนินการ'"
+                            src="~/assets/SolutionsWizemoves/Consulting/cube-transparent.png" alt="profile"
+                            class="inner-circle" :class="{ 'inner-circle-hover': active === 'ดำเนินการ' }" />
+                        </div>
+                        <img class="img-fluid mt-2" src="~/assets/SolutionsWizemoves/Consulting/Line-m.png"
+                          alt="Line.png">
+                      </div>
+                      <div class="ms-3" style="margin-top: -12px;">
+                        <p class="font-md mb-2" style="font-size: 24px;line-height: 24px;">ดำเนินการ</p>
+                        <p class="text-s-20 font-df">ทีมที่ปรึกษาลงมือดำเนินการตามแผนงาน</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex align-items-center mt-2">
+                      <div class="d-flex flex-column align-items-center">
+                        <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วัดผลและปรับปรุง' }">
+                          <img @mouseover="active = 'วัดผลและปรับปรุง'"
+                            src="~/assets/SolutionsWizemoves/Consulting/presentation-chart-bar.png" alt="profile"
+                            class="inner-circle" :class="{ 'inner-circle-hover': active === 'วัดผลและปรับปรุง' }" />
+                        </div>
+                        <img class="img-fluid mt-2" src="~/assets/SolutionsWizemoves/Consulting/Line-m.png"
+                          alt="Line.png">
+                      </div>
+                      <div class="ms-3" style="margin-top: -12px;">
+                        <p class="font-md mb-2" style="font-size: 24px;line-height: 24px;">วัดผลและปรับปรุง</p>
+                        <p class="text-s-20 font-df">อัพเดตการทำงานรายสัปดาห์ วัดผลและปรับปรุง</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-4">
+                <img class="img-fluid img-Process" src="~/assets/SolutionsWizemoves/Consulting/ImageGG.png"
+                  alt="ImageGG.png">
+              </div>
+              <div class="col-12 text-center mt-5 pt-4">
+                <nuxt-link :to="{ path: '/solutions/wizemoves/business-consulting/af' }"
+                  class="btn-gradient text-s-24 font-md py-2" data-tag="process_get_free_consultation">
+                  <span class="text">รับคำปรึกษากับผู้เชี่ยวชาญฟรี</span>
+                </nuxt-link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing">
+      <BlogWizemoves :responseData="responseData" />
+    </section>
+
+    <section class="section-spacing">
+      <CardContact page="BusinessConsulting" />
+    </section>
+  </div>
+</template>
+
+<script>
+import CardBgImg from '@/components/Solutions/Wizemoves/CardBgImg'
+import BlogWizemoves from '@/components/Solutions/Wizemoves/BlogWizemoves'
+import CardContact from '@/components/Solutions/Wizemoves/CardContact'
+import FormDataUser from '@/components/Solutions/Wizemoves/FormDataUser'
+import SuccessForm from '@/components/Solutions/SuccessForm'
+
+export default {
+  name: 'BusinessConsulting',
+
+  layout: 'layoutV2',
+  components: {
+    CardBgImg,
+    BlogWizemoves,
+    CardContact,
+    FormDataUser,
+    SuccessForm
+  },
+  head() {
+    return this.$headUtil({
+      lang: this.$i18n.locale == 'th-TH' ? 'th-TH' : 'en-TH',
+      title: 'รับทำการตลาดออนไลน์ โฆษณาออนไลน์ Social Media',
+      route: process.env.MAIN_URL + this.$route.path,
+      description:
+        'Sellsuki รับทำโฆษณาออนไลน์ การตลาดออนไลน์ และ Social Media Marketing ครอบคลุมการยิงแอดบน Facebook, TikTok, Google และแพลตฟอร์มอื่น ๆ',
+    })
+  },
+  data() {
+    return {
+      isHidden: false,
+      lang: this.$i18n.locale || 'th-TH',
+      responseData: [
+        { id: 1, attributes: { title: "5 กลยุทธ์การตลาดออนไลน์ที่ได้ผลในปี 2024", description: "เรียนรู้กลยุทธ์การตลาดดิจิทัลที่จะช่วยให้ธุรกิจของคุณเติบโตอย่างยั่งยืน", url: "5-digital-marketing-strategies-2024", createdAt: "2024-03-15T00:00:00.000Z", publishedAt: "2024-03-15T00:00:00.000Z", illustration: { data: { attributes: { url: "https://placehold.co/600x400/FF6603/FFFFFF/png?text=Blog+1", alternativeText: "blog image 1" } } }, blog_tags: { data: [{ attributes: { name: "Digital Marketing" } }] }, blog_category: { data: { id: 1, attributes: { name: "Marketing" } } } } },
+        { id: 2, attributes: { title: "วิธีเพิ่มยอดขายออนไลน์ด้วย Social Commerce", description: "Social Commerce คืออะไรและทำไมถึงสำคัญต่อธุรกิจออนไลน์ของคุณ", url: "social-commerce-boost-sales", createdAt: "2024-02-20T00:00:00.000Z", publishedAt: "2024-02-20T00:00:00.000Z", illustration: { data: { attributes: { url: "https://placehold.co/600x400/0F225A/FFFFFF/png?text=Blog+2", alternativeText: "blog image 2" } } }, blog_tags: { data: [{ attributes: { name: "E-Commerce" } }] }, blog_category: { data: { id: 2, attributes: { name: "E-Commerce" } } } } },
+        { id: 3, attributes: { title: "LINE OA สำหรับธุรกิจ: คู่มือฉบับสมบูรณ์", description: "เปิดร้านค้าบน LINE OA และเชื่อมต่อกับลูกค้าได้อย่างมีประสิทธิภาพ", url: "line-oa-business-complete-guide", createdAt: "2024-01-10T00:00:00.000Z", publishedAt: "2024-01-10T00:00:00.000Z", illustration: { data: { attributes: { url: "https://placehold.co/600x400/06C755/FFFFFF/png?text=Blog+3", alternativeText: "blog image 3" } } }, blog_tags: { data: [{ attributes: { name: "LINE" } }] }, blog_category: { data: { id: 3, attributes: { name: "LINE Agency" } } } } },
+        { id: 4, attributes: { title: "Data Analytics เพื่อการตัดสินใจทางธุรกิจ", description: "ใช้ข้อมูลเพื่อขับเคลื่อนธุรกิจและเพิ่มประสิทธิภาพการทำงาน", url: "data-analytics-business-decisions", createdAt: "2023-12-05T00:00:00.000Z", publishedAt: "2023-12-05T00:00:00.000Z", illustration: { data: { attributes: { url: "https://placehold.co/600x400/7B64AF/FFFFFF/png?text=Blog+4", alternativeText: "blog image 4" } } }, blog_tags: { data: [{ attributes: { name: "Analytics" } }] }, blog_category: { data: { id: 4, attributes: { name: "Technology" } } } } }
+      ],
+      animation1: false,
+      showDiv: false,
+      activeSection: "PainPoints",
+      active: "รับบรีฟ",
+      buttons: [
+        { label: "Pain Points", id: "#PainPoints", name: "PainPoints" },
+        { label: "Why Us", id: "#WhyUS", name: "WhyUS" },
+        { label: "Services", id: "#Services", name: "Services" },
+        { label: "Our Solution", id: "#OurSolution", name: "OurSolution" },
+        // { label: "Customers", id: "#Customers", name: "Customers" },
+      ],
+      activeButtonIndex: null,
+      lastScrollY: 0,
+      scrollDirection: "None",
+      interested: !this.$route.query.bu ? 'WizemovesConsult' : this.$route.query.bu,
+      currentImage: require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air.png'),
+      images: {
+        strategic: require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air.png'),
+        market: require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air1.png'),
+        loyalty: require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air2.png'),
+        media: require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air3.png'),
+        influencer: require('~/assets/SolutionsWizemoves/Consulting/Device-Macbook-Air4.png')
+      }
+    }
+  },
+  jsonld() {
+    return [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: this.$t('Menu.Home'),
+            item: 'https://www.sellsuki.co.th/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'WizeMoves',
+            item: 'https://www.sellsuki.co.th/solutions/wizemoves',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: 'business consulting',
+            item: 'https://www.sellsuki.co.th/solutions/wizemoves/business-consulting',
+          },
+        ],
+      },
+      {
+        "@context": "https://schema.org/", 
+        "@type": "Service", 
+        "name": "WizeMoves Consult",
+        "image": "",
+        "description": "ที่ปรึกษาธุรกิจด้านกลยุทธ์ ผู้ช่วยเพิ่มยอดขายให้เป้าหมายของคุณเป็นจริง เราคือที่ปรึกษาด้านกลยุทธ์ที่ช่วยเพิ่มยอดขาย 100 % ภายในเวลา 1 ปี เราพร้อมเติบโตไปกับลูกค้า ที่ปรึกษาที่พร้อมสร้างกลยุทธ์ให้เกิดขึ้นจริงและเปลี่ยนเป็นยอดขายได้",
+        "brand": {
+          "@type": "Brand",
+          "name": "Sellsuki"
+        },
+        "sku": "WizeMoves Consult",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.sellsuki.co.th/solutions/wizemoves/business-consulting",
+          "priceCurrency": "THB",
+          "price": "0",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  },
+  async asyncData({ $axios, store }) {
+    store.commit('setTitle', 'WizemovesConsult')
+    return {}
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll); // Add the scroll event listener
+    const options = {
+      root: null, // Uses the viewport as the container
+      rootMargin: '0px',
+      threshold: [0.1], // เพิ่ม threshold หลายค่า
+    };
+
+    const observer = new IntersectionObserver(this.handleIntersect, options);
+
+    const sections = document.querySelectorAll('.section-active');
+    sections.forEach((section) => observer.observe(section));
+
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        // เพิ่มเงื่อนไขให้เข้มงวดขึ้น
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+          setTimeout(() => {
+            const section = entry.target;
+            if (section.classList.contains('strategic-section')) {
+              this.currentImage = this.images.strategic;
+            } else if (section.classList.contains('market-section')) {
+              this.currentImage = this.images.market;
+            } else if (section.classList.contains('loyalty-section')) {
+              this.currentImage = this.images.loyalty;
+            } else if (section.classList.contains('media-section')) {
+              this.currentImage = this.images.media;
+            } else if (section.classList.contains('influencer-section')) {
+              this.currentImage = this.images.influencer;
+            }
+          }, 100); // delay 100ms
+        }
+      });
+    }, {
+      // ปรับค่า options
+      threshold: 1, // ต้องเห็น element 80% ขึ้นไปถึงจะทริกเกอร์
+      rootMargin: '-50px 0px -50px 0px' // เพิ่มระยะห่างจากขอบบนและล่าง
+    });
+
+    // เพิ่ม class ให้แต่ละ section
+    document.querySelectorAll('.space-tigger').forEach((section, index) => {
+      if (index === 0) section.classList.add('strategic-section');
+      if (index === 1) section.classList.add('market-section');
+      if (index === 2) section.classList.add('loyalty-section');
+      if (index === 3) section.classList.add('media-section');
+      if (index === 4) section.classList.add('influencer-section');
+
+      imageObserver.observe(section);
+    });
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll); // Clean up the listener
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0)
+    },
+    handleIntersect(entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log(entry.target.id);
+          this.activeSection = entry.target.id;
+        }
+      });
+    },
+    setActiveButton(index) {
+      this.activeButtonIndex = index; // Set the active button index
+    },
+    handleScroll() {
+      const scrollY = window.scrollY; // Get the current scroll position
+      const threshold = 650; // Define the scroll threshold
+      this.showDiv = scrollY > threshold; // Show the div if scrolled beyond the threshold
+
+      let currentScrollY = window.scrollY;
+
+      if (currentScrollY > this.lastScrollY) {
+        this.scrollDirection = "Down";
+      } else if (currentScrollY < this.lastScrollY) {
+        this.scrollDirection = "Up";
+        this.showDiv = false;
+      }
+      this.lastScrollY = currentScrollY;
+    },
+    handleChange(sectionId) {
+      // รับ element ของ section ที่ต้องการ scroll ไป
+      const element = document.getElementById(sectionId)
+
+      if (element) {
+        // คำนวณระยะห่างจากด้านบน
+        const offset = 80 // ปรับตามความสูงของ navbar หรือ header
+        const elementPosition = element.getBoundingClientRect().top
+        const offsetPosition = elementPosition + window.pageYOffset - offset
+
+        // ทำการ scroll แบบ smooth
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        })
+      }
+    },
+  },
+}
+</script>
+
+<style scoped>
+@import url('~/assets/styles/css/customNew.css');
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+  position: absolute;
+  width: 100%;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.sticky-macbook {
+  margin-top: 245px;
+  position: sticky;
+  top: 52%;
+  /* เปลี่ยนจาก 100px เป็น 50% */
+  transform: translateY(-50%);
+  /* เพิ่ม transform เพื่อจัดให้อยู่กึ่งกลาง */
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  /* เพิ่ม flex เพื่อจัดการ alignment */
+  align-items: center;
+  /* จัดให้เนื้อหาอยู่กึ่งกลางแนวตั้ง */
+  justify-content: center;
+  /* จัดให้เนื้อหาอยู่กึ่งกลางแนวนอน */
+}
+
+.fade-transition {
+  position: relative;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  max-width: 95%;
+  /* ป้องกันรูปล้นพื้นที่ */
+  height: auto;
+  /* ให้ความสูงปรับตามสัดส่วน */
+}
+
+/* เพิ่ม media query สำหรับหน้าจอขนาดเล็ก */
+@media only screen and (max-width: 600px) {
+  .sticky-macbook {
+    position: relative;
+    /* ยกเลิก sticky บนมือถือ */
+    transform: none;
+    height: auto;
+  }
+}
+
+.accordion-button {
+  background-color: #fbfbfb !important;
+  padding: 5px;
+}
+
+.form-select {
+  border: 0 !important;
+  background-color: #7C3AED !important;
+  /* สีเดียวกับ navbar */
+  color: #FFFFFF !important;
+  /* สีตัวอักษรเป็นสีขาว */
+}
+
+/* ปรับสี dropdown arrow */
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
+/* ปรับ style ตอน focus */
+.form-select:focus {
+  border-color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+/* ปรับสี option ใน dropdown */
+.form-select option {
+  background-color: #7C3AED;
+  color: #FFFFFF;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.item-center {
+  display: block !important;
+}
+
+.space-services {
+  margin-top: 160px !important;
+  /* เพิ่มจาก 80px เป็น 160px */
+  padding-bottom: 80px !important;
+  /* เพิ่ม padding ด้านล่าง */
+  position: relative;
+}
+
+.outer-circle {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  /* ชั้นที่ 1 */
+  border: 2px solid transparent;
+  /* ชั้นที่ 2 */
+}
+
+.inner-circle {
+  padding: 8px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  /* ชั้นด้านในสุด */
+}
+
+.outer-circle-hover {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  /* ชั้นที่ 1 */
+  border: 2px solid #8B5CF61A !important;
+  /* ชั้นที่ 2 */
+}
+
+.inner-circle-hover {
+  padding: 8px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #8B5CF64D !important;
+  /* ชั้นด้านในสุด */
+}
+
+.btn-transparent-violet {
+  display: inline-flex;
+  align-items: center;
+  color: #8B5CF6 !important;
+  border: 1px solid #8B5CF6;
+  background: white;
+  border-radius: 999px;
+  padding: 4px 22px 4px 18px;
+}
+
+.btn-white-violet {
+  display: inline-flex;
+  align-items: center;
+  color: #8B5CF6 !important;
+  background: white;
+  border-radius: 999px;
+  padding: 4px 22px 4px 18px;
+}
+
+.btn-white-violet .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
+.btn-gradient .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
+.btn-gradient {
+  display: inline-flex;
+  align-items: center;
+  color: white !important;
+  background: linear-gradient(82.53deg, #6D28D9 7.45%, #FBBF24 113.56%);
+  border-radius: 999px;
+  padding: 4px 22px 4px 18px;
+}
+
+.btn-gradient .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
+.badge-wizemoves {
+  display: inline-flex;
+  align-items: center;
+  background-color: #F5F3FF1A;
+  color: white;
+  border-radius: 999px;
+  border: 1px solid #DDD6FE33;
+  padding: 4px 16px 4px 10px;
+}
+
+.badge-wizemoves .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.col-6-custom-1 {
+  width: 43% !important;
+}
+
+.col-6-custom-2 {
+  width: 57% !important;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-01 .card-body {
+  padding: 14px 0px 14px 0px;
+}
+
+.card-01 img {
+  border-radius: 8px;
+  padding: 0px;
+}
+
+.card-01 div {
+  font-family: "Heavent-body" !important;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1F2937;
+}
+
+.text-hl {
+  background-color: #F5F3FF;
+  border: 1px solid #DDD6FE;
+  color: #7C3AED;
+  border-radius: 24px;
+  padding: 4px 16px 3px 16px;
+  margin-top: 8px;
+}
+
+.text-hl-blue {
+  background-color: #F0F9FF;
+  border: 1px solid #D9F2FF;
+  color: #32A9FF;
+  border-radius: 24px;
+  padding: 4px 16px 3px 16px;
+  margin-top: 8px;
+}
+
+.bg {
+  background: url('~/assets/image94.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.bg-icon {
+  width: 146px;
+  height: 146px;
+  background-color: #7c3aed;
+  border-radius: 50%;
+  left: 8px;
+  position: relative;
+}
+
+.bg-img-mobile {
+  background-image: url(~/assets/SolutionsWizemoves/Consulting/banner-2.png);
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.bg-img-2 {
+  background-image: url(~/assets/SolutionsWizemoves/img-bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.bg-img-3 {
+  background-image: url(~/assets/SolutionsWizemoves/Consulting/whyus.png);
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.bg-color {
+  background: linear-gradient(90deg,
+      rgba(77, 20, 166, 0.56) 14.45%,
+      rgba(104, 51, 201, 0.45549) 30.75%,
+      rgba(139, 92, 246, 0.32) 47.62%,
+      rgba(167, 139, 250, 0) 64.3%);
+}
+
+.bg-color-mobile {
+  background: linear-gradient(180deg, rgba(109, 40, 217, 0.56) 0%, rgba(139, 92, 246, 0.32) 59.44%, rgba(167, 139, 250, 0) 100%);
+
+}
+
+.bg-icon-main {
+  margin-left: -10px !important;
+  margin-top: -10px !important;
+  background-color: #fcd34d;
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+}
+
+.theme-background-main {
+  background-color: #7c3aed;
+}
+
+.theme-background-sub {
+  background-color: #fcd34d;
+}
+
+.theme-text-main {
+  color: #7c3aed;
+}
+
+.theme-text-sub {
+  color: #fcd34d;
+}
+
+.theme-border {
+  border-bottom: 1px solid #fcd34d !important;
+}
+
+.img-banner-top {
+  margin-top: 80px !important;
+}
+
+.text-ranbow,
+.text-ranbow>* {
+  background: linear-gradient(51.93deg, #8B5CF6 -8.45%, #FACC15 113.97%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 30px;
+}
+
+.border-ranbow {
+  background: #FFF;
+  border-radius: 32px;
+  padding: 4px 16px;
+}
+
+.cart-img-text {
+  border-radius: 16px;
+  background-image: url(~/assets/SolutionsWizemoves/Consulting/img-bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.bg-1 {
+  background-size: cover;
+}
+
+.nav-active {
+  border-bottom: 5px solid #FFFFFF;
+  color: #FFFFFF !important;
+}
+
+.nav-link {
+  color: #FFFFFF !important;
+}
+
+.nav-active .nav-link {
+  color: #FFFFFF !important;
+}
+
+.text-s-158 {
+  font-size: 158px;
+  line-height: 94.8px;
+}
+
+.text-s-86 {
+  font-size: 86px;
+  line-height: 86px;
+}
+
+.text-s-52 {
+  line-height: 52px;
+}
+
+.text-s-44 {
+  line-height: 44px;
+}
+
+.text-s-24 {
+  line-height: 24px;
+}
+
+.text-s-36 {
+  line-height: 36px;
+}
+
+.text-s-20 {
+  line-height: 20px;
+}
+
+.text-s-18 {
+  line-height: 18px;
+}
+
+.img-Process {
+  min-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card-1 {
+    box-shadow: 0px 1px 3px 0px #7B64AF12, 0px 5px 5px 0px #7B64AF0F, 0px 12px 7px 0px #7B64AF0A, 0px 20px 8px 0px #7B64AF03, 0px 32px 9px 0px #7B64AF00;
+    border-radius: 16px;
+    border: 2px solid #F3F4F6;
+    background-color: #FFFFFF;
+  }
+
+  .cart-color-text {
+    border-radius: 16px;
+    padding: 40px 0px;
+    background: linear-gradient(180deg, rgba(46, 21, 89, 0) 43.78%, rgba(21, 10, 40, 0.8) 100%);
+  }
+
+  .space-services {
+    margin-top: 50px !important;
+    padding-bottom: 20px !important;
+  }
+
+  #Services .text-s-52 {
+    font-size: 36px !important;
+    line-height: 36px !important;
+  }
+
+  #Services .text-s-24 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+
+  .section-spacing {
+    padding-top: 0px;
+  }
+
+  .hero-section .text-s-52 {
+    font-size: 44px !important;
+    line-height: 44px !important;
+  }
+
+  .hero-section .text-s-36 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+  }
+
+  .hero-section .text-s-20 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+
+  .pb-200 {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .btn-gradient {
+    padding: 0px 12px 0px 12px;
+  }
+  .btn-white-violet {
+    padding: 0px 12px 0px 12px;
+  }
+  .hero-section .text-s-20 {
+    font-size: 16px !important;
+    line-height: 16px !important;
+    padding: 4px 10px !important;
+  }
+  .hero-section .text-s-24 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+  .breadcrumb .text-s-20 {
+    font-size: 16px !important;
+    padding: 0px !important;
+  }
+  .img-360 {
+    margin-top: 40px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .card-1 {
+    box-shadow: 0px 1px 3px 0px #7B64AF12, 0px 5px 5px 0px #7B64AF0F, 0px 12px 7px 0px #7B64AF0A, 0px 20px 8px 0px #7B64AF03, 0px 32px 9px 0px #7B64AF00;
+    border-radius: 16px;
+    border: 2px solid #F3F4F6;
+    background-color: #FFFFFF;
+  }
+
+  .cart-color-text {
+    border-radius: 16px;
+    padding: 40px 0px;
+    background: linear-gradient(180deg, rgba(46, 21, 89, 0) 43.78%, rgba(21, 10, 40, 0.8) 100%);
+  }
+
+  .section-spacing {
+    padding-top: 0px;
+  }
+
+  .space-services {
+    margin-top: 50px !important;
+    padding-bottom: 20px !important;
+  }
+
+  #Services .text-s-52 {
+    font-size: 36px !important;
+    line-height: 36px !important;
+  }
+
+  #Services .text-s-24 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+
+  .hero-section .text-s-52 {
+    font-size: 44px !important;
+    line-height: 44px !important;
+  }
+
+  .hero-section .text-s-36 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+  }
+
+  .hero-section .text-s-20 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+
+  .banner-main {
+    height: 400px;
+  }
+
+  .bg-img {
+    background-image: url(~/assets/SolutionsWizemoves/Consulting/banner-2.png);
+    background-position: -550px center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .pb-200 {
+    padding-bottom: 100px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card-1 {
+    box-shadow: 0px 1px 3px 0px #7B64AF12, 0px 5px 5px 0px #7B64AF0F, 0px 12px 7px 0px #7B64AF0A, 0px 20px 8px 0px #7B64AF03, 0px 32px 9px 0px #7B64AF00;
+    border-radius: 16px;
+    border: 2px solid #F3F4F6;
+    background-color: #FFFFFF;
+  }
+
+  .cart-color-text {
+    border-radius: 16px;
+    padding: 40px 40px;
+    background: linear-gradient(180deg, rgba(46, 21, 89, 0) 43.78%, rgba(21, 10, 40, 0.8) 100%);
+  }
+
+  .section-spacing {
+    padding-top: 0px;
+  }
+
+  .space-services {
+    margin-top: 50px !important;
+    padding-bottom: 20px !important;
+  }
+
+  #Services .text-s-52 {
+    font-size: 36px !important;
+    line-height: 36px !important;
+  }
+
+  #Services .text-s-24 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+
+  #OurSolution .text-s-36 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+  }
+
+  #OurSolution .text-s-24 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+
+  .hero-section .text-s-52 {
+    font-size: 44px !important;
+    line-height: 44px !important;
+  }
+
+  .hero-section .text-s-36 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+  }
+
+  .hero-section .text-s-20 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+
+  .banner-main {
+    height: 470px;
+  }
+
+  .bg-img {
+    background-image: url(~/assets/SolutionsWizemoves/Consulting/banner-2.png);
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .icon-process {
+    width: 60%;
+  }
+
+  .pb-200 {
+    padding-bottom: 100px;
+  }
+
+  .card-1 .card-body {
+    height: 115px;
+  }
+
+  .btn-gradient {
+    padding: 4px 12px 4px 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card-1 {
+    height: 240px;
+    box-shadow: 0px 1px 3px 0px #7B64AF12, 0px 5px 5px 0px #7B64AF0F, 0px 12px 7px 0px #7B64AF0A, 0px 20px 8px 0px #7B64AF03, 0px 32px 9px 0px #7B64AF00;
+    border-radius: 16px;
+    border: 2px solid #F3F4F6;
+    background-color: #FFFFFF;
+  }
+
+  .cart-color-text {
+    border-radius: 16px;
+    padding: 40px 40px;
+    background: linear-gradient(180deg, rgba(46, 21, 89, 0) 43.78%, rgba(21, 10, 40, 0.8) 100%);
+  }
+
+  .section-spacing {
+    padding-top: 0px;
+  }
+
+  .space-services {
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .banner-main {
+    height: 550px;
+  }
+
+  .bg-img {
+    background-image: url(~/assets/SolutionsWizemoves/Consulting/banner-2.png);
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .icon-process {
+    width: 60%;
+  }
+
+  #Services .text-s-52 {
+    font-size: 52px !important;
+    line-height: 52px !important;
+  }
+
+  #Services .text-s-24 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+  }
+
+  #OurSolution .text-s-36 {
+    font-size: 36px !important;
+    line-height: 36px !important;
+  }
+
+  #OurSolution .text-s-24 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+  }
+
+  .hero-section .text-s-52 {
+    font-size: 52px !important;
+    line-height: 52px !important;
+  }
+
+  .hero-section .text-s-36 {
+    font-size: 36px !important;
+    line-height: 36px !important;
+  }
+
+  .hero-section .text-s-20 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+
+  .pb-200 {
+    padding-bottom: 80px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card-1 {
+    height: 280px;
+    box-shadow: 0px 1px 3px 0px #7B64AF12, 0px 5px 5px 0px #7B64AF0F, 0px 12px 7px 0px #7B64AF0A, 0px 20px 8px 0px #7B64AF03, 0px 32px 9px 0px #7B64AF00;
+    border-radius: 16px;
+    border: 2px solid #F3F4F6;
+    background-color: #FFFFFF;
+  }
+
+  .cart-color-text {
+    border-radius: 16px;
+    padding: 40px 40px;
+    background: linear-gradient(180deg, rgba(46, 21, 89, 0) 43.78%, rgba(21, 10, 40, 0.8) 100%);
+  }
+
+  .section-spacing {
+    padding-top: 80px;
+  }
+
+  .banner-main {
+    height: 550px;
+  }
+
+  .bg-img {
+    background-image: url(~/assets/SolutionsWizemoves/Consulting/banner-2.png);
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .icon-process {
+    width: 74%;
+  }
+
+  .space-services {
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .pb-200 {
+    padding-bottom: 200px;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  .text-s-36 {
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
+
+  .text-s-44 {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+}
+
+@media only screen and (min-width: 1578px) {
+  .card-1 {
+    height: 240px;
+    box-shadow: 0px 1px 3px 0px #7B64AF12, 0px 5px 5px 0px #7B64AF0F, 0px 12px 7px 0px #7B64AF0A, 0px 20px 8px 0px #7B64AF03, 0px 32px 9px 0px #7B64AF00;
+    border-radius: 16px;
+    border: 2px solid #F3F4F6;
+    background-color: #FFFFFF;
+  }
+}
+
+/* ----------------------- model ----------------- */
+.header-model {
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+}
+
+.modal-footer {
+  border-top: 0px;
+}
+
+.modal-header {
+  border-bottom: 0px;
+}
+
+.modal-custom-size {
+  border-radius: 16px;
+  background-color: #FAF5FF;
+}
+</style>

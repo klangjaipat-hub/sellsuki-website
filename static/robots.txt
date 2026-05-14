@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /search/
+Disallow: /lineoa/getquote/
+Disallow: /?utm_source=
+Disallow: /thank-you-job
+Disallow: /en/thank-you-job
+Disallow: /everydaymarketing/
+Disallow: /comingsoon
+Disallow: /en/comingsoon
+Allow: /
+Sitemap: https://www.sellsuki.co.th/sitemap.xml

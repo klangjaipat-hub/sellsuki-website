@@ -1,0 +1,345 @@
+.mt-180{
+  margin-top: 180px !important;
+}
+
+.bg-main{
+    background: linear-gradient(180deg, #FFF 11.26%, #FFF6ED 100%);
+}
+.bg-transparent{
+    background: transparent;
+}
+
+.ellipsis-text {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tag-blog-1{
+  font-family: 'Heavent-body' !important;
+  background: #EFF6FF;
+  border: 1px solid #DBEAFE;
+  border-radius: 50px;
+  padding: 0px 6px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 16px !important;
+  display: inline-block;
+  margin-right: 5px;
+  color: #3B82F6 !important;
+  overflow: hidden;
+}
+.tag-blog-2{
+  font-family: 'Heavent-body' !important;
+  background: #F0FDFA;
+  border: 1px solid #CCFBF1;
+  border-radius: 50px;
+  padding: 0px 6px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 16px !important;
+  display: inline-block;
+  margin-right: 5px;
+  color: #14B8A6 !important;
+  overflow: hidden;
+}
+
+.tag-blog-3{
+  font-family: 'Heavent-body' !important;
+  background: #FEF2F2;
+  border: 1px solid #FEE2E2;
+  border-radius: 50px;
+  padding: 0px 8px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 16px !important;
+  display: inline-block;
+  margin-right: 8px;
+  color: #EF4444 !important;
+  overflow: hidden;
+}
+
+.search{
+  border-radius: 32px;
+  border: 1px solid #E5E7EB;
+  background: #FFF;
+  padding: 8px 16px;
+  align-items: center;
+  align-self: stretch;
+  display: inline-flex;
+  width: 130px;
+  height: 45px;
+}
+.search-btn{
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: right;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%; /* 24px */
+  transition: ease-in 0.4s;
+  width: 100%;
+}
+
+.card-title {
+  margin-bottom: 0 !important;
+  line-height: 28px;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Heavent-med' !important;
+}
+.bg-EBF8FF{
+  background: #EBF8FF !important;
+}
+.color-09193A{
+  color: #09193A !important;
+}
+.color-FDFDFD{
+  color: #FDFDFD !important;
+}
+
+.color-009DFC{
+  color: #009DFC !important;
+}
+
+.color-0F172A{
+  color: #0F172A !important;
+}
+
+.color-8F97A8{
+  color: #8F97A8 !important;
+}
+
+.color-F8FAFC{
+  color: #F8FAFC !important;
+}
+
+.color-64748B{
+  color: #64748B !important;
+}
+
+.color-F35B1F{
+  color: #F35B1F !important;
+}
+
+.color-00B3F4{
+  color: #00B3F4 !important;
+}
+.color-32A9FF{
+  color: #32A9FF !important;
+}
+.color-2DA3FD{
+  color: #2DA3FD !important;
+}
+.color-1F2937{
+  color: #1F2937 !important;
+}
+.color-6B7280{
+  color: #6B7280 !important;
+}
+.color-9CA3AF{
+  color: #9CA3AF !important;
+}
+.color-EA580C{
+  color: #EA580C !important;
+}
+.color-FFFFFF{
+  color: #FFFFFF !important;
+}
+.border-F35B1F{
+  border: 1px solid #F35B1F !important;
+}
+.border-00B3F4{
+  border: 1px solid #00B3F4 !important;
+}
+.border-B3E6FF{
+  border: 1px solid #B3E6FF !important;
+}
+
+.bg-03193C{
+  background-color: #03193C !important;
+}
+.bg-004F7E{
+  background-color: #004F7E !important;
+}
+
+.opct-08{
+  opacity: 0.8;
+}
+
+.btn-df {
+  color: #09193A;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 48px !important;
+  display: inline-block;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  padding: 8px 24px 8px 24px;
+  cursor: pointer;
+}
+
+a:hover{
+  color: none !important;
+}
+
+.des{
+  background-color: #FFF;
+  padding-top: 3px;
+  margin-top: -3px;
+  z-index: 9;
+  position: relative;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+/* ----------------------------- font size -------------------------------- */
+
+.breadcrumb-text{
+  color: #6B7280;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.il-n{
+  line-height: normal !important;
+}
+
+/* ------------------------------ animetion -------------------------------- */
+
+.show-top{
+  animation: show-top 1s forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes show-top {
+  0%   {margin-top: 100px;opacity: 0;}
+  100% {margin-top: 0px;opacity: 1;}
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 1s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ----------------------------- font -------------------------------- */
+
+/* Webfont: DBHeaventRounded-Med */@font-face {
+    font-family: 'Heavent';
+    src: url('../../../assets/fonts/HeaventRounded/DB HeaventRoundedv3.2.1.woff2') format('woff2'), /* Modern Browsers */
+         url('../../../assets/fonts/HeaventRounded/DB HeaventRoundedv3.2.1.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Webfont: DBHeaventRounded-Med */@font-face {
+    font-family: 'Heavent-body';
+    src: url('../../../assets/fonts/HeaventRounded/DB HeaventRounded Bd v3.2.1.woff2') format('woff2'), /* Modern Browsers */
+         url('../../../assets/fonts/HeaventRounded/DB HeaventRounded Bd v3.2.1.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Webfont: DBHeaventRounded-Med */@font-face {
+    font-family: 'Heavent-med';
+    src: url('../../../assets/fonts/HeaventRounded/DB HeaventRounded Med v3.2.1.woff2') format('woff2'), /* Modern Browsers */
+         url('../../../assets/fonts/HeaventRounded/DB HeaventRounded Med v3.2.1.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Webfont: DBHeaventRounded-Med */@font-face {
+    font-family: 'Sarabun';
+    src: url('../../../assets/fonts/Sarabun/Sarabun-Regular.woff2') format('woff2');
+              font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Webfont: DBHeaventRounded-Med */@font-face {
+    font-family: 'Tahoma';
+    src: url('../../../assets/fonts/Tahoma/Tahoma.woff2') format('woff2');
+              font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  .font-df{
+    font-family: 'Heavent' !important;
+  }
+
+  .font-md{
+    font-family: 'Heavent-med' !important;
+  }
+  .font-bd{
+    font-family: 'Heavent-body' !important;
+  }
+
+/* -------------------------#Responsive------------------------ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .close-table{
+      position: absolute;
+      top: -25px;
+      right: 16px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .close-table{
+      position: absolute;
+      top: -25px;
+      right: 16px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .close-table{
+      position: absolute;
+      top: -40px;
+      right: 20px;
+      width: 24px;
+      height: 24px;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .close-table{
+      position: absolute;
+      top: -40px;
+      right: 20px;
+      width: 24px;
+      height: 24px;
+    }
+  }

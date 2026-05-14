@@ -1,0 +1,9 @@
+/* Webfont: DBHeaventRounded */@font-face {
+    font-family: 'DBHeaventRounded';
+    src: url('DB HeaventRoundedv3.2.woff2') format('woff2'), /* Modern Browsers */
+         url('DB HeaventRoundedv3.2.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
