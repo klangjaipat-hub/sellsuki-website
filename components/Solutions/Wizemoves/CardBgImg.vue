@@ -266,6 +266,93 @@
       </div>
     </div>
   </div>
+  <div v-if="type === 'WizmovesContent'" class="row ps-4 ms-2 pe-1 mt-md-0 mt-md-0 mt-5">
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+      <div class="card">
+        <div class="card-body d-flex align-items-center">
+          <div class="cart-img">
+            <img src="~/assets/SolutionsWizemoves/Consulting/ICON11.png" alt="ICON11.png" />
+          </div>
+          <div class="px-112">
+            <p class="text-s-36 font-bd color-FFFFFF m-auto">
+              วางแผนกลยุทธ์คอนเทนต์โดยทีมผู้เชี่ยวชาญ
+            </p>
+            <p class="text-s-24 mt-md-3 mt-1 color-FFFFFF mb-0">
+              เรามีทีมผู้เชี่ยวชาญด้าน Content Marketing ที่มีประสบการณ์ในการวางกลยุทธ์และสร้างเนื้อหาที่เหมาะสมกับกลุ่มเป้าหมาย
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+      <div class="card">
+        <div class="card-body d-flex align-items-center">
+          <div class="cart-img">
+            <img src="~/assets/SolutionsWizemoves/Consulting/ICON12.png" alt="ICON12.png" />
+          </div>
+          <div class="px-112">
+            <p class="text-s-36 font-bd color-FFFFFF m-auto">
+              สร้างสรรค์เนื้อหาที่หลากหลายและครบถ้วนในทุกแพลตฟอร์มโซเชียลมีเดีย
+            </p>
+            <p class="text-s-24 mt-md-3 mt-1 color-FFFFFF mb-0">
+              ผลิตคอนเทนต์ได้หลากหลายรูปแบบ ทั้งภาพนิ่ง วิดีโอ และบทความในทุกแพลตฟอร์ม Social Media
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+      <div class="card">
+        <div class="card-body d-flex align-items-center">
+          <div class="cart-img">
+            <img src="~/assets/SolutionsWizemoves/Consulting/ICON3.png" alt="ICON3.png" />
+          </div>
+          <div class="px-112">
+            <p class="text-s-36 font-bd color-FFFFFF m-auto">
+              บริหารจัดการเพจและดูแลการขายอย่างครบวงจร
+            </p>
+            <p class="text-s-24 mt-md-3 mt-1 color-FFFFFF mb-0">
+              มีทีมแอดมินดูแลเพจอย่างครบวงจร ตั้งแต่ตอบแชทลูกค้า ให้ข้อมูลสินค้า ไปจนถึงสนับสนุนการปิดการขาย
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+      <div class="card">
+        <div class="card-body d-flex align-items-center">
+          <div class="cart-img">
+            <img src="~/assets/SolutionsWizemoves/Consulting/ICON11.png" alt="ICON11.png" />
+          </div>
+          <div class="px-112">
+            <p class="text-s-36 font-bd color-FFFFFF m-auto">
+              มั่นใจด้วยมาตรฐานการทำงานในเครือ Sellsuki ผู้เชี่ยวชาญด้านการตลาดออนไลน์
+            </p>
+            <p class="text-s-24 mt-md-3 mt-1 color-FFFFFF mb-0">
+              เราเป็นส่วนหนึ่งของ Sellsuki ซึ่งมีความเชี่ยวชาญด้านระบบบริหารการขายและการทำการตลาดออนไลน์แบบครบวงจร
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
+      <div class="card">
+        <div class="card-body d-flex align-items-center">
+          <div class="cart-img">
+            <img src="~/assets/SolutionsWizemoves/Consulting/ICON12.png" alt="ICON12.png" />
+          </div>
+          <div class="px-112">
+            <p class="text-s-36 font-bd color-FFFFFF m-auto">
+              สแตนด์บายดูแลลูกค้าเพื่อไม่ให้พลาดทุกโอกาสสำคัญ
+            </p>
+            <p class="text-s-24 mt-md-3 mt-1 color-FFFFFF mb-0">
+              ให้บริการตอบกลับลูกค้าทุกวัน เวลา 09:00–24:00 น. เพื่อไม่ให้ธุรกิจพลาดโอกาสทางการขาย
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div v-if="type === 'Ads'" class="row ps-4 ms-2 pe-1 mt-md-0 mt-md-0 mt-5">
     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
       <div class="card">

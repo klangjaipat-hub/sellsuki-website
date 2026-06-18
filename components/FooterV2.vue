@@ -23,7 +23,7 @@
                       <p class="text-w-400 text-s-24 mb-1"><a target="_blank" rel="noopener"  href="/solutions/akita" class="text-white">{{ $t("footer.Fulfillment") }}</a></p>
                       <p class="text-w-400 text-s-24 mb-1"><a target="_blank" rel="noopener"  href="/solutions/lineagency" class="text-white">{{ $t("footer.LINEAgency") }}</a></p>
                       <p class="text-w-400 text-s-24 mb-1"><a target="_blank" rel="noopener"  href="/solutions/beary" class="text-white">{{ $t("footer.DevelopWebsite") }}</a></p>
-                      <p class="text-w-400 text-s-24 mb-1"><a target="_blank" rel="noopener"  href="/solutions/kaikong" class="text-white">{{ $t("footer.ContentMarketing") }}</a></p>
+                      <p class="text-w-400 text-s-24 mb-1"><a target="_blank" rel="noopener"  href="/solutions/wizemoves-content" class="text-white">{{ $t("footer.ContentMarketing") }}</a></p>
                       <p class="text-w-400 text-s-24 mb-1"><a target="_blank" rel="noopener"  href="/solutions/shipmunk" class="text-white">{{ $t("footer.DeliveryCompare") }}</a></p>
                       <p class="text-w-400 text-s-24 mb-1"><a target="_blank" rel="noopener"  href="/solutions/oc2plus" class="text-white">{{ $t("footer.CustomerDataPlatform") }}</a></p>
                     </div>
@@ -82,7 +82,7 @@
                       <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/akita" class="text-white">{{ $t("footer.Fulfillment") }}</a></p>
                       <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/lineagency" class="text-white">{{ $t("footer.LINEAgency") }}</a></p>
                       <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/beary" class="text-white">{{ $t("footer.DevelopWebsite") }}</a></p>
-                      <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/kaikong" class="text-white">{{ $t("footer.ContentMarketing") }}</a></p>
+                      <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/wizemoves-content" class="text-white">{{ $t("footer.ContentMarketing") }}</a></p>
                       <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/shipmunk" class="text-white">{{ $t("footer.DeliveryCompare") }}</a></p>
                       <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/oc2plus" class="text-white">{{ $t("footer.CustomerDataPlatform") }}</a></p>
                   </div>
@@ -140,7 +140,7 @@
                   <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/akita" class="text-white">{{ $t("footer.Fulfillment") }}</a></p>
                   <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/lineagency" class="text-white">{{ $t("footer.LINEAgency") }}</a></p>
                   <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/beary" class="text-white">{{ $t("footer.DevelopWebsite") }}</a></p>
-                  <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/kaikong" class="text-white">{{ $t("footer.ContentMarketing") }}</a></p>
+                  <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/wizemoves-content" class="text-white">{{ $t("footer.ContentMarketing") }}</a></p>
                   <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/shipmunk" class="text-white">{{ $t("footer.DeliveryCompare") }}</a></p>
                   <p class="text-w-400 text-s-20"><a target="_blank" rel="noopener"  href="/solutions/oc2plus" class="text-white">{{ $t("footer.CustomerDataPlatform") }}</a></p>
                 </div>

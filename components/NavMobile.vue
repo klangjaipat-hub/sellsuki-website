@@ -104,7 +104,7 @@
                             <hr style="border: 1px solid #50151C;"/>
                             <a href="/solutions/lineagency">{{$t("Menu.Solutions.LINEAgency")}}</a>
                             <hr style="border: 1px solid #50151C;"/>
-                            <a href="/solutions/kaikong">{{$t("Menu.Solutions.KaikongContentMarketing")}}</a>
+                            <a href="/solutions/wizemoves-content">{{$t("Menu.Solutions.KaikongContentMarketing")}}</a>
                             <hr style="border: 1px solid #50151C;"/>
                             <a href="/solutions/beary">{{$t("Menu.Solutions.BearyWebTechService")}}</a>
                             <hr style="border: 1px solid #50151C;"/>

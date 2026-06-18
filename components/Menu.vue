@@ -102,7 +102,7 @@
                   <hr style="border: 1px solid #E7E7EA;width: 182px;height: 0px;">
                   <nuxt-link @click="scrollToTop" :to="localePath('/solutions/fuse')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.FuseAdvertising")}}</p></nuxt-link><br>
                   <nuxt-link @click="scrollToTop" :to="localePath('/solutions/lineagency')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.LINEAgency")}}</p></nuxt-link><br>
-                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/kaikong')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.KaikongContentMarketing")}}</p></nuxt-link><br>
+                  <nuxt-link @click="scrollToTop" :to="localePath('/solutions/wizemoves-content')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.KaikongContentMarketing")}}</p></nuxt-link><br>
                   <nuxt-link @click="scrollToTop" :to="localePath('/solutions/beary')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.BearyWebTechService")}}</p></nuxt-link><br>
                   <nuxt-link @click="scrollToTop" :to="localePath('/solutions/akita')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;">{{$t("Menu.Solutions.AkitaFulfillment")}}</p></nuxt-link><br>
                   <nuxt-link @click="scrollToTop" :to="localePath('/solutions/shipmunk')"><p class="text-w-500 text-s-24" style="color:#50151C;margin-top: 2px;width: 255px;">{{$t("Menu.Solutions.ShipmunkDropshipping")}}</p></nuxt-link><br>

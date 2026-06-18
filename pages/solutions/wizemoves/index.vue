@@ -187,7 +187,7 @@
                 </nuxt-link>
               </div>
               <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 p-2">
-                <nuxt-link :to="localePath('/solutions/kaikong')" data-tag="wizemoves-service-content-button">
+                <nuxt-link :to="localePath('/solutions/wizemoves-content')" data-tag="wizemoves-service-content-button">
                   <div class="d-flex item-center mt-md-0 mt-2 card-1 card-1-body">
                     <a class="btn-card-1 d-none">ไปที่บริการ <img class="ms-2"
                         src="~/assets/SolutionsLine/Vector (Stroke).svg" alt="Vector (Stroke).svg"></a>
