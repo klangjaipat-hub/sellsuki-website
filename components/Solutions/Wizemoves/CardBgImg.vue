@@ -271,7 +271,7 @@
       <div class="card">
         <div class="card-body d-flex align-items-center">
           <div class="cart-img">
-            <img src="~/assets/SolutionsWizemoves/Consulting/ICON11.png" alt="ICON11.png" />
+            <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-why-1.png" alt="icon-why-1.png" />
           </div>
           <div class="px-112">
             <p class="text-s-36 font-bd color-FFFFFF m-auto">
@@ -288,7 +288,7 @@
       <div class="card">
         <div class="card-body d-flex align-items-center">
           <div class="cart-img">
-            <img src="~/assets/SolutionsWizemoves/Consulting/ICON12.png" alt="ICON12.png" />
+            <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-why-2.png" alt="icon-why-2.png" />
           </div>
           <div class="px-112">
             <p class="text-s-36 font-bd color-FFFFFF m-auto">
@@ -305,7 +305,7 @@
       <div class="card">
         <div class="card-body d-flex align-items-center">
           <div class="cart-img">
-            <img src="~/assets/SolutionsWizemoves/Consulting/ICON3.png" alt="ICON3.png" />
+            <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-why-3.png" alt="icon-why-3.png" />
           </div>
           <div class="px-112">
             <p class="text-s-36 font-bd color-FFFFFF m-auto">
@@ -322,7 +322,7 @@
       <div class="card">
         <div class="card-body d-flex align-items-center">
           <div class="cart-img">
-            <img src="~/assets/SolutionsWizemoves/Consulting/ICON11.png" alt="ICON11.png" />
+            <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-why-4.png" alt="icon-why-4.png" />
           </div>
           <div class="px-112">
             <p class="text-s-36 font-bd color-FFFFFF m-auto">
@@ -339,7 +339,7 @@
       <div class="card">
         <div class="card-body d-flex align-items-center">
           <div class="cart-img">
-            <img src="~/assets/SolutionsWizemoves/Consulting/ICON12.png" alt="ICON12.png" />
+            <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-why-5.png" alt="icon-why-5.png" />
           </div>
           <div class="px-112">
             <p class="text-s-36 font-bd color-FFFFFF m-auto">

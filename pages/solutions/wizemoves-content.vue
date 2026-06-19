@@ -31,12 +31,11 @@
                     <ol class="font-md">
                       <ul class="breadcrumb">
                         <li>
-                          <i class="bi bi-house-fill color-FFFFFF me-1"></i>
-                          <nuxt-link :to="localePath('/')"><span class="text-s-20 color-FFFFFF">{{ $t("Menu.Home") }}</span></nuxt-link>
+                          <span class="text-s-20 color-FFFFFF">Business</span>
                           <i class="bi bi-chevron-right color-FFFFFF ms-1"></i>
                         </li>
                         <li>
-                          <span class="text-s-20 color-FFFFFF ms-1">{{ $t("Menu.Solution") }}</span>
+                          <span class="text-s-20 color-FFFFFF ms-1">WizeMoves</span>
                           <i class="bi bi-chevron-right color-FFFFFF ms-1"></i>
                         </li>
                         <li>
@@ -73,7 +72,7 @@
                 </table>
               </div>
               <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-5 col-sm-6 col-6 d-flex">
-                <img class="img-fluid mt-auto" src="https://sellsuki-web-storage-production.s3.ap-southeast-1.amazonaws.com/banner_Kaikong_bbb52fcfe4.webp" alt="Kaikong Content Marketing">
+                <img class="img-fluid mt-auto" src="~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content.png" alt="Kaikong Content Marketing">
               </div>
             </div>
           </div>
@@ -88,12 +87,11 @@
                 <ol class="font-md mt-2">
                   <ul class="breadcrumb">
                     <li>
-                      <i class="bi bi-house-fill color-FFFFFF me-1"></i>
-                      <nuxt-link :to="localePath('/')"><span class="text-s-20 color-FFFFFF">{{ $t("Menu.Home") }}</span></nuxt-link>
+                      <span class="text-s-20 color-FFFFFF">Business</span>
                       <i class="bi bi-chevron-right color-FFFFFF ms-1"></i>
                     </li>
                     <li>
-                      <span class="text-s-20 color-FFFFFF ms-1">{{ $t("Menu.Solution") }}</span>
+                      <span class="text-s-20 color-FFFFFF ms-1">WizeMoves</span>
                       <i class="bi bi-chevron-right color-FFFFFF ms-1"></i>
                     </li>
                     <li>
@@ -130,7 +128,7 @@
                 </div>
               </div>
               <div class="col-12 d-flex justify-content-center align-items-center mt-3">
-                <img class="img-fluid mx-auto d-block" src="https://sellsuki-web-storage-production.s3.ap-southeast-1.amazonaws.com/banner_Kaikong_bbb52fcfe4.webp" alt="Kaikong Content Marketing" style="max-width:100%;height:auto">
+                <img class="img-fluid mx-auto d-block" src="~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content.png" alt="Kaikong Content Marketing" style="max-width:100%;height:auto">
               </div>
             </div>
           </div>
@@ -142,7 +140,7 @@
     <section class="scroll-div animate__animated  animate__fadeIn" v-if="showDiv"
       style="position: fixed;top: 0px;z-index: 999;width: 100%;background: #7C3AED;">
       <nav class="navbar navbar-expand-lg ps-md-0 pe-md-0 ps-3 pe-3 p-0"
-        style="z-index: 9999;box-shadow: 0px 1px 3px 0px #D4A01712,0px 5px 5px 0px #D4A0170F,0px 12px 7px 0px #D4A0170A,0px 20px 8px 0px #D4A01703,0px 32px 9px 0px #D4A01700;">
+        style="z-index: 9999;box-shadow: rgba(123, 100, 175, 0.07) 0px 1px 3px 0px, rgba(123, 100, 175, 0.06) 0px 5px 5px 0px, rgba(123, 100, 175, 0.04) 0px 12px 7px 0px, rgba(123, 100, 175, 0.01) 0px 20px 8px 0px, rgba(123, 100, 175, 0) 0px 32px 9px 0px;">
         <div class="container">
           <div class="ml-2 d-lg-block d-none">
             <ul class="navbar-nav text-s-24 text-w-500">
@@ -202,7 +200,7 @@
               <div class="card-1 p-1 d-none d-lg-block">
                 <div class="card-body">
                   <img class="img-fluid px-md-0 px-4 py-md-0 py-2 pt-3"
-                    src="~/assets/SolutionsWizemoves/Consulting/arrow-trending-down.png" alt="arrow-trending-down.png">
+                    src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-pain-point-1.png" alt="icon-pain-point-1.png">
                   <p class="text-s-36 font-bd color-1F2937 mb-2 mt-4">เพจร้าง ยอดเงียบ</p>
                   <p class="text-s-24 font-df color-1F2937 mb-0">ธุรกิจประสบปัญหาด้านการสื่อสารบนสื่อออนไลน์ ส่งผลให้เพจขาดความเคลื่อนไหว และยอดการมีส่วนร่วมต่ำ</p>
                 </div>
@@ -210,7 +208,7 @@
               <div class="card-1 d-block d-lg-none">
                 <div class="card-body p-3 d-flex align-items-center justify-content-center">
                   <img class="img-fluid" height="100%"
-                    src="~/assets/SolutionsWizemoves/Consulting/arrow-trending-down.png" alt="arrow-trending-down.png">
+                    src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-pain-point-1.png" alt="icon-pain-point-1.png">
                   <div class="ms-3">
                     <p class="text-s-24 font-bd color-1F2937 mb-1">เพจร้าง ยอดเงียบ</p>
                     <p class="text-s-20 font-df color-1F2937 mb-1">ธุรกิจประสบปัญหาด้านการสื่อสารบนสื่อออนไลน์ ส่งผลให้เพจขาดความเคลื่อนไหว และยอดการมีส่วนร่วมต่ำ</p>
@@ -222,15 +220,15 @@
               <div class="card-1 p-1 d-none d-lg-block">
                 <div class="card-body">
                   <img class="img-fluid px-md-0 px-4 py-md-0 py-2 pt-3"
-                    src="~/assets/SolutionsWizemoves/Consulting/ICON4 1.png" alt="ICON4 1.png">
+                    src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-pain-point-2.png" alt="icon-pain-point-2.png">
                   <p class="text-s-36 font-bd color-1F2937 mb-2 mt-4">คอนเทนต์ไม่โดน แบรนด์ไม่จำ</p>
                   <p class="text-s-24 font-df color-1F2937 mb-0">เนื้อหาที่เผยแพร่ไม่สามารถดึงดูดกลุ่มเป้าหมาย ทำให้ไม่เกิดการแชร์และขาดการรับรู้แบรนด์</p>
                 </div>
               </div>
               <div class="card-1 d-block d-lg-none">
                 <div class="card-body p-3 d-flex align-items-center">
-                  <img class="img-fluid" height="100%" src="~/assets/SolutionsWizemoves/Consulting/ICON4 1.png"
-                    alt="ICON4 1.png">
+                  <img class="img-fluid" height="100%" src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-pain-point-2.png"
+                    alt="icon-pain-point-2.png">
                   <div class="ms-3">
                     <p class="text-s-24 font-bd color-1F2937 mb-1">คอนเทนต์ไม่โดน แบรนด์ไม่จำ</p>
                     <p class="text-s-20 font-df color-1F2937 mb-1">เนื้อหาที่เผยแพร่ไม่สามารถดึงดูดกลุ่มเป้าหมาย ทำให้ไม่เกิดการแชร์และขาดการรับรู้แบรนด์</p>
@@ -242,15 +240,15 @@
               <div class="card-1 p-1 d-none d-lg-block">
                 <div class="card-body">
                   <img class="img-fluid px-md-0 px-4 py-md-0 py-2 pt-3"
-                    src="~/assets/SolutionsWizemoves/Consulting/ICON6 1.png" alt="ICON6 1.png">
+                    src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-pain-point-3.png" alt="icon-pain-point-3.png">
                   <p class="text-s-36 font-bd color-1F2937 mb-2 mt-4">แอดมินไม่โปร ตอบช้า</p>
                   <p class="text-s-24 font-df color-1F2937 mt-4 pt-3 mb-0">ขาดบุคลากรที่มีความเชี่ยวชาญในการดูแลเพจ ทำให้การตอบกลับลูกค้าล่าช้าหรือไม่ครบถ้วน</p>
                 </div>
               </div>
               <div class="card-1 d-block d-lg-none">
                 <div class="card-body p-3 d-flex align-items-center">
-                  <img class="img-fluid" height="100%" src="~/assets/SolutionsWizemoves/Consulting/ICON6 1.png"
-                    alt="ICON6 1.png">
+                  <img class="img-fluid" height="100%" src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-pain-point-3.png"
+                    alt="icon-pain-point-3.png">
                   <div class="ms-3">
                     <p class="text-s-24 font-bd color-1F2937 mb-1">แอดมินไม่โปร ตอบช้า</p>
                     <p class="text-s-20 font-df color-1F2937 mb-1">ขาดบุคลากรที่มีความเชี่ยวชาญในการดูแลเพจ ทำให้การตอบกลับลูกค้าล่าช้าหรือไม่ครบถ้วน</p>
@@ -262,15 +260,15 @@
               <div class="card-1 p-1 d-none d-lg-block">
                 <div class="card-body">
                   <img class="img-fluid px-md-0 px-4 py-md-0 py-2 pt-3"
-                    src="~/assets/SolutionsWizemoves/Consulting/user-group.png" alt="user-group.png">
+                    src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-pain-point-4.png" alt="icon-pain-point-4.png">
                   <p class="text-s-36 font-bd color-1F2937 mb-2 mt-4">เจ้าของงานล้น จนเสียเวลา</p>
                   <p class="text-s-24 font-df color-1F2937 mt-4 pt-3 mb-0">ผู้ประกอบการต้องจัดการงานด้านคอนเทนต์และการสื่อสารเองทั้งหมด ส่งผลให้เสียเวลาและกระทบประสิทธิภาพธุรกิจ</p>
                 </div>
               </div>
               <div class="card-1 d-block d-lg-none">
                 <div class="card-body p-3 d-flex align-items-center">
-                  <img class="img-fluid" height="100%" src="~/assets/SolutionsWizemoves/Consulting/user-group.png"
-                    alt="user-group.png">
+                  <img class="img-fluid" height="100%" src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-pain-point-4.png"
+                    alt="icon-pain-point-4.png">
                   <div class="ms-3">
                     <p class="text-s-24 font-bd color-1F2937 mb-1">เจ้าของงานล้น จนเสียเวลา</p>
                     <p class="text-s-20 font-df color-1F2937 mb-1">ผู้ประกอบการต้องจัดการงานด้านคอนเทนต์และการสื่อสารเองทั้งหมด ส่งผลให้เสียเวลาและกระทบประสิทธิภาพธุรกิจ</p>
@@ -281,10 +279,6 @@
           </div>
         </div>
         <div class="row mt-5 fade-in-up" v-intersect>
-          <div class="col-12 text-center">
-            <p class="text-s-24">หากปัญหาเหล่านี้ตรงกับธุรกิจของคุณ นี่ไม่ใช่ปัญหาเชิงการจัดการ แต่<span
-                class="font-bd">เป็นปัญหาเชิงกลยุทธ์...</span></p>
-          </div>
           <div class="col-12 text-center mt-3">
             <nuxt-link :to="{ path: '/solutions/wizemoves-content' }"
               class="btn-gradient text-s-24 font-md py-2" data-tag="pain_points_get_free_consultation">
@@ -429,8 +423,8 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/carbon_model-builder.png"
-                        alt="carbon_model-builder.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-first-service-1.png"
+                        alt="icon-first-service-1.png">
                       <span class="ms-2 m-auto">วางกลยุทธ์ด้านเนื้อหาอย่างเป็นระบบ</span>
                     </div>
                     <p class="text-s-24 font-df pe-4">วางแผนการสื่อสารครบวงจรให้ตรงเป้าหมายธุรกิจ เพื่อสร้างภาพจำที่ชัดเจนในทุกแพลตฟอร์ม และเปลี่ยนกลุ่มเป้าหมายให้เป็นลูกค้าประจำในระยะยาว</p>
@@ -439,8 +433,8 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/icon-park-outline_user-positioning.png"
-                        alt="icon-park-outline_user-positioning.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-first-service-2.png"
+                        alt="icon-first-service-2.png">
                       <span class="ms-2 m-auto">ผลิตคอนเทนต์บน Facebook, Instagram</span>
                     </div>
                     <p class="text-s-24 font-df">ผลิตสื่อโฆษณาภาพและวิดีโอที่โดดเด่นบน Facebook และ Instagram เน้นความสะดุดตาเพื่อกระตุ้นการมีส่วนร่วม และขับเคลื่อนยอดขายผ่านโซเชียลมีเดียยอดนิยม</p>
@@ -449,7 +443,7 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/Icon.png" alt="Icon.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-first-service-3.png" alt="icon-first-service-3.png">
                       <span class="ms-2 m-auto">วิเคราะห์จุดเด่นของแบรนด์</span>
                     </div>
                     <p class="text-s-24 font-df pe-4">ชูจุดเด่นของแบรนด์ผ่านคอนเทนต์ที่ตรงใจลูกค้า เปลี่ยนเอกลักษณ์ของธุรกิจให้เป็นเรื่องราวที่ทรงพลังและสร้างผลลัพธ์ที่วัดผลได้จริง</p>
@@ -458,7 +452,7 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/chat.png" alt="chat.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-first-service-4.png" alt="icon-first-service-4.png">
                       <span class="ms-2 m-auto">ให้คำปรึกษาเกี่ยวกับ Content Marketing</span>
                     </div>
                     <p class="text-s-24 font-df pe-4">ให้คำปรึกษาเชิงลึกโดยผู้เชี่ยวชาญ เพื่อแก้ปัญหาการสื่อสารและเพิ่มศักยภาพคอนเทนต์ พร้อมอัปเดตเทรนด์ใหม่ให้ธุรกิจนำหน้าคู่แข่งเสมอ</p>
@@ -490,7 +484,7 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/search.png" alt="search.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-second-service-1.png" alt="icon-second-service-1.png">
                       <span class="ms-2 m-auto">ออกแบบงานกราฟิกให้เหมาะสมแบรนด์</span>
                     </div>
                     <p class="text-s-24 font-df pe-4">ออกแบบสื่อกราฟิกให้สะท้อนตัวตนแบรนด์และสื่อสารข้อความอย่างชัดเจน เพื่อสร้างความจดจำและความแตกต่างที่ยั่งยืนในตลาด</p>
@@ -499,7 +493,7 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/view-columns.png" alt="view-columns.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-second-service-2.png" alt="icon-second-service-2.png">
                       <span class="ms-2 m-auto">ถ่ายภาพนิ่ง วิดีโอโฆษณา</span>
                     </div>
                     <p class="text-s-24 font-df">บริการถ่ายภาพและวิดีโอโฆษณาที่ปรับโทนได้ตามเอกลักษณ์ของแบรนด์ เพื่อนำเสนอสินค้าให้น่าสนใจและสร้างผลลัพธ์ทางการตลาดที่จับต้องได้</p>
@@ -508,7 +502,7 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/chat.png" alt="chat.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-second-service-3.png" alt="icon-second-service-3.png">
                       <span class="ms-2 m-auto">ผลิตคลิปสั้นเพื่อลงใน TikTok หรือ Reels</span>
                     </div>
                     <p class="text-s-24 font-df pe-4">สร้างสรรค์วิดีโอสั้นทันกระแส (TikTok, Reels, Instagram) เพื่อเพิ่มการเข้าถึง (Reach) และสร้างการรับรู้แบรนด์ไปยังกลุ่มเป้าหมายในวงกว้าง</p>
@@ -517,7 +511,7 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/copy.png" alt="copy.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-second-service-4.png" alt="icon-second-service-4.png">
                       <span class="ms-2 m-auto">ผลิตคอนเทนต์ Album Post บน Facebook</span>
                     </div>
                     <p class="text-s-24 font-df">ผลิตคอนเทนต์อัลบั้มภาพที่ร้อยเรียงเป็นเรื่องราว ให้ข้อมูลครบถ้วนและน่าติดตาม เพื่อเพิ่มประสิทธิภาพในการมีส่วนร่วม (Engagement) กับแบรนด์อย่างสูงสุด</p>
@@ -550,7 +544,7 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/trophy.png" alt="trophy.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-third-service-1.png" alt="icon-third-service-1.png">
                       <span class="ms-2 m-auto">ตอบคำถามลูกค้าอย่างมืออาชีพ</span>
                     </div>
                     <p class="text-s-24 font-df pe-4">ทีมแอดมินดูแลลูกค้ามืออาชีพสแตนด์บายตั้งแต่ 09.00 - 24.00 น. ทุกวันไม่มีวันหยุด เพื่อลดการรอคอยและสร้างความพึงพอใจสูงสุดในทุกการติดต่อสื่อสาร</p>
@@ -559,7 +553,7 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/jigsaw.png" alt="jigsaw.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-third-service-2.png" alt="icon-third-service-2.png">
                       <span class="ms-2 m-auto">ให้ข้อมูลสินค้าและเงื่อนไขอย่างครบถ้วน</span>
                     </div>
                     <p class="text-s-24 font-df">ให้ข้อมูลสินค้าและเงื่อนไขบริการอย่างแม่นยำ พร้อมจัดการทุกข้อสงสัยอย่างเป็นระบบเพื่อสร้างความน่าเชื่อถือและภาพลักษณ์ที่ดีให้กับแบรนด์ของคุณ</p>
@@ -568,7 +562,7 @@
                 <div class="col-lg-6 col-12 pe-0">
                   <div class="card card-01">
                     <div class="card-body d-flex">
-                      <img src="~/assets/SolutionsWizemoves/Consulting/view-columns.png" alt="view-columns.png">
+                      <img src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-third-service-3.png" alt="icon-third-service-3.png">
                       <span class="ms-2 m-auto">สนับสนุนการปิดการขาย</span>
                     </div>
                     <p class="text-s-24 font-df pe-4">เน้นเทคนิคการสื่อสารเชิงรุกเพื่อกระตุ้นการตัดสินใจซื้อและปิดการขายอย่างมีประสิทธิภาพ ช่วยเปลี่ยนผู้สนใจให้กลายเป็นยอดขายจริง เพื่อสร้างการเติบโตให้ธุรกิจ</p>
@@ -639,7 +633,7 @@
                     <div class="d-flex justify-content-center">
                       <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วิเคราะห์ธุรกิจ' }">
                         <img @mouseover="active = 'วิเคราะห์ธุรกิจ'"
-                          src="~/assets/SolutionsWizemoves/Consulting/clipboard-document-list.png" alt="profile"
+                          src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-1.png" alt="profile"
                           class="inner-circle" :class="{ 'inner-circle-hover': active === 'วิเคราะห์ธุรกิจ' }" />
                       </div>
                       <img class="img-fluid ms-2 icon-process" src="~/assets/SolutionsWizemoves/Consulting/Line.png" alt="Line.png">
@@ -651,7 +645,7 @@
                     <div class="d-flex justify-content-center">
                       <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วางกลยุทธ์' }">
                         <img @mouseover="active = 'วางกลยุทธ์'"
-                          src="~/assets/SolutionsWizemoves/Consulting/chat-bubble-left-right.png" alt="profile"
+                          src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-2.png" alt="profile"
                           class="inner-circle" :class="{ 'inner-circle-hover': active === 'วางกลยุทธ์' }" />
                       </div>
                       <img class="img-fluid ms-2 icon-process" src="~/assets/SolutionsWizemoves/Consulting/Line.png" alt="Line.png">
@@ -663,7 +657,7 @@
                     <div class="d-flex justify-content-center">
                       <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'ผลิตและเผยแพร่' }">
                         <img @mouseover="active = 'ผลิตและเผยแพร่'"
-                          src="~/assets/SolutionsWizemoves/Consulting/cube-transparent.png" alt="profile"
+                          src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-3.png" alt="profile"
                           class="inner-circle" :class="{ 'inner-circle-hover': active === 'ผลิตและเผยแพร่' }" />
                       </div>
                       <img class="img-fluid ms-2 icon-process" src="~/assets/SolutionsWizemoves/Consulting/Line.png" alt="Line.png">
@@ -675,7 +669,7 @@
                     <div class="d-flex justify-content-center">
                       <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'ดูแลเพจ' }">
                         <img @mouseover="active = 'ดูแลเพจ'"
-                          src="~/assets/SolutionsWizemoves/Consulting/user-group.png" alt="profile"
+                          src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-4.png" alt="profile"
                           class="inner-circle" :class="{ 'inner-circle-hover': active === 'ดูแลเพจ' }" />
                       </div>
                       <img class="img-fluid ms-2 icon-process" src="~/assets/SolutionsWizemoves/Consulting/Line.png" alt="Line.png">
@@ -688,7 +682,7 @@
                     <div class="d-flex justify-content-start">
                       <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วัดผลและปรับปรุง' }">
                         <img @mouseover="active = 'วัดผลและปรับปรุง'"
-                          src="~/assets/SolutionsWizemoves/Consulting/presentation-chart-bar.png" alt="profile"
+                          src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-5.png" alt="profile"
                           class="inner-circle" :class="{ 'inner-circle-hover': active === 'วัดผลและปรับปรุง' }" />
                       </div>
                     </div>
@@ -704,7 +698,7 @@
                       <div class="d-flex flex-column align-items-center">
                         <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วิเคราะห์ธุรกิจ' }">
                           <img @mouseover="active = 'วิเคราะห์ธุรกิจ'"
-                            src="~/assets/SolutionsWizemoves/Consulting/clipboard-document-list.png" alt="profile"
+                            src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-1.png" alt="profile"
                             class="inner-circle" :class="{ 'inner-circle-hover': active === 'วิเคราะห์ธุรกิจ' }" />
                         </div>
                         <img class="img-fluid mt-2" src="~/assets/SolutionsWizemoves/Consulting/Line-m.png" alt="Line.png">
@@ -720,7 +714,7 @@
                       <div class="d-flex flex-column align-items-center">
                         <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วางกลยุทธ์' }">
                           <img @mouseover="active = 'วางกลยุทธ์'"
-                            src="~/assets/SolutionsWizemoves/Consulting/chat-bubble-left-right.png" alt="profile"
+                            src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-2.png" alt="profile"
                             class="inner-circle" :class="{ 'inner-circle-hover': active === 'วางกลยุทธ์' }" />
                         </div>
                         <img class="img-fluid mt-2" src="~/assets/SolutionsWizemoves/Consulting/Line-m.png" alt="Line.png">
@@ -736,7 +730,7 @@
                       <div class="d-flex flex-column align-items-center">
                         <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'ผลิตและเผยแพร่' }">
                           <img @mouseover="active = 'ผลิตและเผยแพร่'"
-                            src="~/assets/SolutionsWizemoves/Consulting/cube-transparent.png" alt="profile"
+                            src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-3.png" alt="profile"
                             class="inner-circle" :class="{ 'inner-circle-hover': active === 'ผลิตและเผยแพร่' }" />
                         </div>
                         <img class="img-fluid mt-2" src="~/assets/SolutionsWizemoves/Consulting/Line-m.png" alt="Line.png">
@@ -752,7 +746,7 @@
                       <div class="d-flex flex-column align-items-center">
                         <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'ดูแลเพจ' }">
                           <img @mouseover="active = 'ดูแลเพจ'"
-                            src="~/assets/SolutionsWizemoves/Consulting/user-group.png" alt="profile"
+                            src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-4.png" alt="profile"
                             class="inner-circle" :class="{ 'inner-circle-hover': active === 'ดูแลเพจ' }" />
                         </div>
                         <img class="img-fluid mt-2" src="~/assets/SolutionsWizemoves/Consulting/Line-m.png" alt="Line.png">
@@ -769,7 +763,7 @@
                       <div class="d-flex flex-column align-items-center">
                         <div class="outer-circle" :class="{ 'outer-circle-hover': active === 'วัดผลและปรับปรุง' }">
                           <img @mouseover="active = 'วัดผลและปรับปรุง'"
-                            src="~/assets/SolutionsWizemoves/Consulting/presentation-chart-bar.png" alt="profile"
+                            src="~/assets/SolutionsWizemoves/icon-wizemoves-content/icon-process-5.png" alt="profile"
                             class="inner-circle" :class="{ 'inner-circle-hover': active === 'วัดผลและปรับปรุง' }" />
                         </div>
                       </div>
@@ -782,8 +776,8 @@
                 </div>
               </div>
               <div class="col-12 mt-4">
-                <img class="img-fluid img-Process" src="~/assets/SolutionsWizemoves/Consulting/ImageGG.png"
-                  alt="ImageGG.png">
+                <img class="img-fluid img-Process" src="~/assets/SolutionsWizemoves/image-wizemoves-content/Image-process.png"
+                  alt="Image-process.png">
               </div>
               <div class="col-12 text-center mt-5 pt-4">
                 <nuxt-link :to="{ path: '/solutions/wizemoves-content' }"
@@ -1161,7 +1155,7 @@ export default {
   display: inline-flex;
   align-items: center;
   color: #8B5CF6 !important;
-  border: 1px solid #7C3AED;
+  border: 1px solid #8B5CF6;
   background: white;
   border-radius: 999px;
   padding: 4px 22px 4px 18px;
@@ -1262,8 +1256,8 @@ export default {
 }
 
 .text-hl {
-  background-color: #FFF9E6;
-  border: 1px solid #F7D87A;
+  background-color: #F5F3FF;
+  border: 1px solid #DDD6FE;
   color: #7C3AED;
   border-radius: 24px;
   padding: 4px 16px 3px 16px;
@@ -1296,7 +1290,7 @@ export default {
 }
 
 .bg-img-mobile {
-  background-image: url('https://sellsuki-web-storage-production.s3.ap-southeast-1.amazonaws.com/banner_Kaikong_bbb52fcfe4.webp');
+  background-image: url('~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content-bg.png');
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -1440,7 +1434,7 @@ export default {
 }
 
 .img-Process {
-  min-height: 300px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -1450,7 +1444,7 @@ export default {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .card-1 {
-    box-shadow: 0px 1px 3px 0px #D4A01712, 0px 5px 5px 0px #D4A0170F, 0px 12px 7px 0px #D4A0170A, 0px 20px 8px 0px #D4A01703, 0px 32px 9px 0px #D4A01700;
+    box-shadow: rgba(123, 100, 175, 0.07) 0px 1px 3px 0px, rgba(123, 100, 175, 0.06) 0px 5px 5px 0px, rgba(123, 100, 175, 0.04) 0px 12px 7px 0px, rgba(123, 100, 175, 0.01) 0px 20px 8px 0px, rgba(123, 100, 175, 0) 0px 32px 9px 0px;
     border-radius: 16px;
     border: 2px solid #F3F4F6;
     background-color: #FFFFFF;
@@ -1529,7 +1523,7 @@ export default {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .card-1 {
-    box-shadow: 0px 1px 3px 0px #D4A01712, 0px 5px 5px 0px #D4A0170F, 0px 12px 7px 0px #D4A0170A, 0px 20px 8px 0px #D4A01703, 0px 32px 9px 0px #D4A01700;
+    box-shadow: rgba(123, 100, 175, 0.07) 0px 1px 3px 0px, rgba(123, 100, 175, 0.06) 0px 5px 5px 0px, rgba(123, 100, 175, 0.04) 0px 12px 7px 0px, rgba(123, 100, 175, 0.01) 0px 20px 8px 0px, rgba(123, 100, 175, 0) 0px 32px 9px 0px;
     border-radius: 16px;
     border: 2px solid #F3F4F6;
     background-color: #FFFFFF;
@@ -1580,7 +1574,7 @@ export default {
   }
 
   .bg-img {
-    background-image: url('https://sellsuki-web-storage-production.s3.ap-southeast-1.amazonaws.com/banner_Kaikong_bbb52fcfe4.webp');
+    background-image: url('~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content-bg.png');
     background-position: -550px center;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1594,7 +1588,7 @@ export default {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .card-1 {
-    box-shadow: 0px 1px 3px 0px #D4A01712, 0px 5px 5px 0px #D4A0170F, 0px 12px 7px 0px #D4A0170A, 0px 20px 8px 0px #D4A01703, 0px 32px 9px 0px #D4A01700;
+    box-shadow: rgba(123, 100, 175, 0.07) 0px 1px 3px 0px, rgba(123, 100, 175, 0.06) 0px 5px 5px 0px, rgba(123, 100, 175, 0.04) 0px 12px 7px 0px, rgba(123, 100, 175, 0.01) 0px 20px 8px 0px, rgba(123, 100, 175, 0) 0px 32px 9px 0px;
     border-radius: 16px;
     border: 2px solid #F3F4F6;
     background-color: #FFFFFF;
@@ -1655,7 +1649,7 @@ export default {
   }
 
   .bg-img {
-    background-image: url('https://sellsuki-web-storage-production.s3.ap-southeast-1.amazonaws.com/banner_Kaikong_bbb52fcfe4.webp');
+    background-image: url('~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content-bg.png');
     background-position: center;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1682,7 +1676,7 @@ export default {
 @media only screen and (min-width: 992px) {
   .card-1 {
     height: 240px;
-    box-shadow: 0px 1px 3px 0px #D4A01712, 0px 5px 5px 0px #D4A0170F, 0px 12px 7px 0px #D4A0170A, 0px 20px 8px 0px #D4A01703, 0px 32px 9px 0px #D4A01700;
+    box-shadow: rgba(123, 100, 175, 0.07) 0px 1px 3px 0px, rgba(123, 100, 175, 0.06) 0px 5px 5px 0px, rgba(123, 100, 175, 0.04) 0px 12px 7px 0px, rgba(123, 100, 175, 0.01) 0px 20px 8px 0px, rgba(123, 100, 175, 0) 0px 32px 9px 0px;
     border-radius: 16px;
     border: 2px solid #F3F4F6;
     background-color: #FFFFFF;
@@ -1708,7 +1702,7 @@ export default {
   }
 
   .bg-img {
-    background-image: url('https://sellsuki-web-storage-production.s3.ap-southeast-1.amazonaws.com/banner_Kaikong_bbb52fcfe4.webp');
+    background-image: url('~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content-bg.png');
     background-position: center;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1762,7 +1756,7 @@ export default {
 @media only screen and (min-width: 1200px) {
   .card-1 {
     height: 280px;
-    box-shadow: 0px 1px 3px 0px #D4A01712, 0px 5px 5px 0px #D4A0170F, 0px 12px 7px 0px #D4A0170A, 0px 20px 8px 0px #D4A01703, 0px 32px 9px 0px #D4A01700;
+    box-shadow: rgba(123, 100, 175, 0.07) 0px 1px 3px 0px, rgba(123, 100, 175, 0.06) 0px 5px 5px 0px, rgba(123, 100, 175, 0.04) 0px 12px 7px 0px, rgba(123, 100, 175, 0.01) 0px 20px 8px 0px, rgba(123, 100, 175, 0) 0px 32px 9px 0px;
     border-radius: 16px;
     border: 2px solid #F3F4F6;
     background-color: #FFFFFF;
@@ -1783,7 +1777,7 @@ export default {
   }
 
   .bg-img {
-    background-image: url('https://sellsuki-web-storage-production.s3.ap-southeast-1.amazonaws.com/banner_Kaikong_bbb52fcfe4.webp');
+    background-image: url('~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content-bg.png');
     background-position: center;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1818,7 +1812,7 @@ export default {
 @media only screen and (min-width: 1578px) {
   .card-1 {
     height: 240px;
-    box-shadow: 0px 1px 3px 0px #D4A01712, 0px 5px 5px 0px #D4A0170F, 0px 12px 7px 0px #D4A0170A, 0px 20px 8px 0px #D4A01703, 0px 32px 9px 0px #D4A01700;
+    box-shadow: rgba(123, 100, 175, 0.07) 0px 1px 3px 0px, rgba(123, 100, 175, 0.06) 0px 5px 5px 0px, rgba(123, 100, 175, 0.04) 0px 12px 7px 0px, rgba(123, 100, 175, 0.01) 0px 20px 8px 0px, rgba(123, 100, 175, 0) 0px 32px 9px 0px;
     border-radius: 16px;
     border: 2px solid #F3F4F6;
     background-color: #FFFFFF;
@@ -1829,7 +1823,7 @@ export default {
   display: inline-flex;
   align-items: center;
   color: #7C3AED !important;
-  border: 1px solid #7C3AED;
+  border: 1px solid #DDD6FE;
   background: white;
   border-radius: 999px;
   padding: 4px 22px 4px 18px;
@@ -1857,7 +1851,7 @@ export default {
 
 /* ---- Kaikong Hero Banner ---- */
 .kk-bg-img {
-  background-image: url('https://sellsuki-web-storage-production.s3.ap-southeast-1.amazonaws.com/banner_Kaikong_bbb52fcfe4.webp');
+  background-image: url('~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content-bg.png');
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1871,7 +1865,7 @@ export default {
   padding-bottom: 0;
 }
 .kk-bg-img-mobile {
-  background-image: url('https://sellsuki-web-storage-production.s3.ap-southeast-1.amazonaws.com/banner_Kaikong_bbb52fcfe4.webp');
+  background-image: url('~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content-bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
