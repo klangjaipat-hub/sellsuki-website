@@ -31,11 +31,11 @@
                     <ol class="font-md">
                       <ul class="breadcrumb">
                         <li>
-                          <span class="text-s-20 color-FFFFFF">Business</span>
+                          <nuxt-link :to="localePath('/')"><img class="mb-1 me-1" src="~/assets/SolutionsWizemoves/home.png" /><span class="text-s-20 color-FFFFFF">Business</span></nuxt-link>
                           <i class="bi bi-chevron-right color-FFFFFF ms-1"></i>
                         </li>
                         <li>
-                          <span class="text-s-20 color-FFFFFF ms-1">WizeMoves</span>
+                          <nuxt-link :to="localePath('/solutions/wizemoves')"><span class="text-s-20 color-FFFFFF ms-1">WizeMoves</span></nuxt-link>
                           <i class="bi bi-chevron-right color-FFFFFF ms-1"></i>
                         </li>
                         <li>
@@ -62,17 +62,17 @@
                         <span class="text text-s-20 font-df">{{ $t("solution.kaikong.admin_page") }}</span>
                       </div>
                     </div>
-                    <div class="d-flex flex-wrap mt-4">
+                    <div class="d-flex flex-wrap mt-4 gap-2">
                       <a href="tel:0900967526" class="kk-btn-main text-s-24 font-md py-2">
-                        <i class="bi bi-telephone-fill me-2"></i>
-                        <span>สอบถามเพิ่มเติม 02-026-3250</span>
+                        <img src="~/assets/SolutionsWizemoves/Consulting/cursor-arrow-rays.png" alt="cursor-arrow-rays.png" class="icon me-2">
+                        <span>รับแผนและคำปรึกษา</span>
                       </a>
                     </div>
                   </td>
                 </table>
               </div>
               <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-5 col-sm-6 col-6 d-flex">
-                <img class="img-fluid mt-auto" src="~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content.png" alt="Kaikong Content Marketing">
+                <img class="img-fluid mt-auto" src="~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content-half.png" alt="Kaikong Content Marketing">
               </div>
             </div>
           </div>
@@ -87,11 +87,11 @@
                 <ol class="font-md mt-2">
                   <ul class="breadcrumb">
                     <li>
-                      <span class="text-s-20 color-FFFFFF">Business</span>
+                      <nuxt-link :to="localePath('/')"><img class="mb-1 me-1" src="~/assets/SolutionsWizemoves/home.png" /><span class="text-s-20 color-FFFFFF">Business</span></nuxt-link>
                       <i class="bi bi-chevron-right color-FFFFFF ms-1"></i>
                     </li>
                     <li>
-                      <span class="text-s-20 color-FFFFFF ms-1">WizeMoves</span>
+                      <nuxt-link :to="localePath('/solutions/wizemoves')"><span class="text-s-20 color-FFFFFF ms-1">WizeMoves</span></nuxt-link>
                       <i class="bi bi-chevron-right color-FFFFFF ms-1"></i>
                     </li>
                     <li>
@@ -120,15 +120,19 @@
                     <span class="text text-s-18 font-df">{{ $t("solution.kaikong.admin_page") }}</span>
                   </div>
                 </div>
-                <div class="d-flex flex-wrap mt-4">
+                <div class="d-flex flex-wrap mt-4 gap-2">
                   <a href="tel:0900967526" class="kk-btn-main text-s-20 font-md py-2">
-                    <i class="bi bi-telephone-fill me-2"></i>
-                    <span>02-026-3250</span>
+                    <img src="~/assets/SolutionsWizemoves/Consulting/cursor-arrow-rays.png" alt="cursor-arrow-rays.png" class="icon me-2">
+                    <span>รับแผนและคำปรึกษา</span>
                   </a>
+                  <nuxt-link :to="localePath('/solutions/wizemoves/business-consulting/af')" class="btn-violet p-1 ps-3 pe-3" style="padding-top: 2px !important;">
+                    <img src="~/assets/SolutionsWizemoves/customer/newspaper.png" alt="newspaper.png" class="me-1">
+                    ขอใบเสนอราคา
+                  </nuxt-link>
                 </div>
               </div>
               <div class="col-12 d-flex justify-content-center align-items-center mt-3">
-                <img class="img-fluid mx-auto d-block" src="~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content.png" alt="Kaikong Content Marketing" style="max-width:100%;height:auto">
+                <img class="img-fluid mx-auto d-block" src="~/assets/SolutionsWizemoves/image-wizemoves-content/ปกบนสุด-wzm-content-half.png" alt="Kaikong Content Marketing" style="max-width:100%;height:auto">
               </div>
             </div>
           </div>
@@ -1036,6 +1040,7 @@ export default {
   /* เพิ่ม transform เพื่อจัดให้อยู่กึ่งกลาง */
   height: 400px;
   overflow: hidden;
+  border-radius: 16px;
   display: flex;
   /* เพิ่ม flex เพื่อจัดการ alignment */
   align-items: center;
@@ -1858,10 +1863,11 @@ export default {
 }
 .kk-bg-color {
   background: linear-gradient(90deg,
-    rgba(77, 20, 166, 0.56) 14.45%,
-    rgba(104, 51, 201, 0.45549) 30.75%,
-    rgba(139, 92, 246, 0.32) 47.62%,
-    rgba(167, 139, 250, 0) 64.3%);
+    rgba(30, 8, 80, 0.95) 0%,
+    rgba(55, 15, 120, 0.92) 14.45%,
+    rgba(77, 20, 166, 0.82) 30.75%,
+    rgba(104, 51, 201, 0.55) 47.62%,
+    rgba(139, 92, 246, 0) 64.3%);
   padding-bottom: 0;
 }
 .kk-bg-img-mobile {
@@ -1872,21 +1878,21 @@ export default {
   min-height: 600px;
 }
 .kk-bg-color-mobile {
-  background: linear-gradient(180deg, rgba(109, 40, 217, 0.56) 0%, rgba(139, 92, 246, 0.32) 59.44%, rgba(167, 139, 250, 0) 100%);
+  background: linear-gradient(180deg, rgba(30, 8, 80, 0.95) 0%, rgba(55, 15, 120, 0.88) 20%, rgba(109, 40, 217, 0.65) 59.44%, rgba(167, 139, 250, 0) 100%);
 }
 .kk-badge {
   display: inline-flex;
   align-items: center;
-  background-color: #F5F3FF1A;
+  background-color: #FFF9E61A;
   color: white;
   border-radius: 999px;
-  border: 1px solid #DDD6FE33;
+  border: 1px solid #F7D87A33;
   padding: 4px 16px 4px 10px;
 }
 .kk-badge-icon {
   font-size: 16px;
   margin-right: 6px;
-  color: #7C3AED;
+  color: white;
 }
 .kk-btn-main {
   display: inline-flex;

@@ -65,6 +65,10 @@
                 class="btn-violet p-1 ps-3 pe-3 me-auto ms-0" style="padding-top: 2px !important;"><img class="me-1"
                   src="~/assets/SolutionsWizemoves/customer/newspaper.png" alt="newspaper.png" />
                 ขอใบเสนอราคา</nuxt-link>
+              <nuxt-link v-if="page === 'Kaikong'" to="/solutions/wizemoves/business-consulting/af"
+                class="btn-violet p-1 ps-3 pe-3 me-auto ms-0" style="padding-top: 2px !important;"><img class="me-1"
+                  src="~/assets/SolutionsWizemoves/customer/newspaper.png" alt="newspaper.png" />
+                ขอใบเสนอราคา</nuxt-link>
             </div>
           </div>
         </div>
@@ -119,6 +123,11 @@
                     src="~/assets/SolutionsWizemoves/customer/newspaper.png" alt="newspaper.png" />
                   <span class="ms-3">ขอใบเสนอราคา</span></nuxt-link>
                 <nuxt-link v-if="page === 'Martech'" :to="{ path: '/solutions/wizemoves/form/martech' }"
+                  class="btn-violet position-relative d-flex align-items-center justify-content-center px-4 py-2 w-100"><img
+                    class="position-absolute start-0 ms-3" style="height: 20px;"
+                    src="~/assets/SolutionsWizemoves/customer/newspaper.png" alt="newspaper.png" />
+                  <span class="ms-3">ขอใบเสนอราคา</span></nuxt-link>
+                <nuxt-link v-if="page === 'Kaikong'" to="/solutions/wizemoves/business-consulting/af"
                   class="btn-violet position-relative d-flex align-items-center justify-content-center px-4 py-2 w-100"><img
                     class="position-absolute start-0 ms-3" style="height: 20px;"
                     src="~/assets/SolutionsWizemoves/customer/newspaper.png" alt="newspaper.png" />
