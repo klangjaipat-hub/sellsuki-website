@@ -63,10 +63,10 @@
                       </div>
                     </div>
                     <div class="d-flex flex-wrap mt-4 gap-2">
-                      <a href="tel:0900967526" class="kk-btn-main text-s-24 font-md py-2">
+                      <nuxt-link :to="localePath('/solutions/wizemoves/form/content-marketing')" class="kk-btn-main text-s-24 font-md py-2">
                         <img src="~/assets/SolutionsWizemoves/Consulting/cursor-arrow-rays.png" alt="cursor-arrow-rays.png" class="icon me-2">
                         <span>รับแผนและคำปรึกษา</span>
-                      </a>
+                      </nuxt-link>
                     </div>
                   </td>
                 </table>
@@ -121,10 +121,10 @@
                   </div>
                 </div>
                 <div class="d-flex flex-wrap mt-4 gap-2">
-                  <a href="tel:0900967526" class="kk-btn-main text-s-20 font-md py-2">
+                  <nuxt-link :to="localePath('/solutions/wizemoves/form/content-marketing')" class="kk-btn-main text-s-20 font-md py-2">
                     <img src="~/assets/SolutionsWizemoves/Consulting/cursor-arrow-rays.png" alt="cursor-arrow-rays.png" class="icon me-2">
                     <span>รับแผนและคำปรึกษา</span>
-                  </a>
+                  </nuxt-link>
                   <nuxt-link :to="localePath('/solutions/wizemoves/business-consulting/af')" class="btn-violet p-1 ps-3 pe-3" style="padding-top: 2px !important;">
                     <img src="~/assets/SolutionsWizemoves/customer/newspaper.png" alt="newspaper.png" class="me-1">
                     ขอใบเสนอราคา
@@ -284,7 +284,7 @@
         </div>
         <div class="row mt-5 fade-in-up" v-intersect>
           <div class="col-12 text-center mt-3">
-            <nuxt-link :to="{ path: '/solutions/wizemoves-content' }"
+            <nuxt-link :to="localePath('/solutions/wizemoves/form/content-marketing')"
               class="btn-gradient text-s-24 font-md py-2" data-tag="pain_points_get_free_consultation">
               <span class="text">ปรึกษากลยุทธ์กับทีมฟรี</span>
             </nuxt-link>
@@ -465,7 +465,7 @@
               </div>
               <div class="row mt-4">
                 <div class="col-12">
-                  <nuxt-link :to="{ path: '/solutions/wizemoves-content' }"
+                  <nuxt-link :to="localePath('/solutions/wizemoves/form/content-marketing')"
                     class="btn-transparent-violet text-s-24 font-md py-2"
                     data-tag="services_strategic_planning_free_consultation">
                     <span class="text">ปรึกษากลยุทธ์ฟรี</span>
@@ -524,7 +524,7 @@
               </div>
               <div class="row mt-4">
                 <div class="col-12">
-                  <nuxt-link :to="{ path: '/solutions/wizemoves-content' }"
+                  <nuxt-link :to="localePath('/solutions/wizemoves/form/content-marketing')"
                     class="btn-transparent-violet text-s-24 font-md py-2"
                     data-tag="services_market_expansion_free_consultation">
                     <span class="text">ปรึกษากลยุทธ์ฟรี</span>
@@ -575,7 +575,7 @@
               </div>
               <div class="row mt-4">
                 <div class="col-12">
-                  <nuxt-link :to="{ path: '/solutions/wizemoves-content' }"
+                  <nuxt-link :to="localePath('/solutions/wizemoves/form/content-marketing')"
                     class="btn-transparent-violet text-s-24 font-md py-2"
                     data-tag="services_customer_loyalty_free_consultation">
                     <span class="text">ปรึกษากลยุทธ์ฟรี</span>
@@ -590,7 +590,7 @@
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-none d-md-block">
               <div class="sticky-macbook">
-                <transition name="fade" mode="out-in"> <img class="p-xl-4 p-0 fade-transition" :key="currentImage"
+                <transition name="fade" mode="out-in"> <img class="fade-transition" :key="currentImage"
                     :src="currentImage" :alt="currentImage" />
                 </transition>
               </div>
@@ -784,7 +784,7 @@
                   alt="Image-process.png">
               </div>
               <div class="col-12 text-center mt-5 pt-4">
-                <nuxt-link :to="{ path: '/solutions/wizemoves-content' }"
+                <nuxt-link :to="localePath('/solutions/wizemoves/form/content-marketing')"
                   class="btn-gradient text-s-24 font-md py-2" data-tag="process_get_free_consultation">
                   <span class="text">รับคำปรึกษากับผู้เชี่ยวชาญฟรี</span>
                 </nuxt-link>
