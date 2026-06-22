@@ -517,8 +517,8 @@
                               </p>
                             </div>
                           </nuxt-link>
-                          <a href="/solutions/wizemoves#ContentMarketing" @mouseleave="menu = ''"
-                            @mouseover="menu = 'Content Marketing'" class="row px-2 py-3 bt-col-2">
+                          <nuxt-link :to="localePath('/solutions/wizemoves-content')" @mouseleave.native="menu = ''"
+                            @mouseover.native="menu = 'Content Marketing'" class="row px-2 py-3 bt-col-2">
                             <div v-if="menu !== 'Content Marketing'" class="col-2 align-self-center">
                               <img src="~/assets/SolutionsWizemoves/menu/Wizemove/document-text.svg"
                                 alt="document-text.svg" />
@@ -535,7 +535,7 @@
                                 ผู้เชี่ยวชาญในด้านการทำ Content Marketing
                               </p>
                             </div>
-                          </a>
+                          </nuxt-link>
                           <nuxt-link :to="localePath('/solutions/wizemoves/edis')" @mouseleave.native="menu = ''"
                             @mouseover.native="menu = 'e-Distributor'" class="row px-2 py-3 bt-col-2">
                             <div v-if="menu !== 'e-Distributor'" class="col-2 align-self-center">

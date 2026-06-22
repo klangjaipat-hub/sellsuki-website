@@ -1077,7 +1077,7 @@ export default {
 
 .form-select {
   border: 0 !important;
-  background-color: #8B5CF6 !important;
+  background-color: #7C3AED !important;
   /* สีเดียวกับ navbar */
   color: #FFFFFF !important;
   /* สีตัวอักษรเป็นสีขาว */

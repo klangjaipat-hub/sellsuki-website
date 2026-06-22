@@ -173,10 +173,12 @@
                                 <p class="text-s-24 font-df mb-0">Digital Advertising</p>
                                 <span class="text-s-20 font-df color-9CA3AF">รับทำโฆษณาออนไลน์บน Social Media ทุกแพลตฟอร์ม</span>
                             </li>
+                            <nuxt-link @click.native="$emit('close')" to="/solutions/wizemoves-content" class="text-decoration-none w-100">
                             <li class="mt-2 mb-4">
                                 <p class="text-s-24 font-df mb-0">Content Marketing</p>
                                 <span class="text-s-20 font-df color-9CA3AF">ผู้เชี่ยวชาญในด้านการทำ Content Marketing</span>
                             </li>
+                            </nuxt-link>
                             <nuxt-link @click.native="$emit('close')" to="/solutions/wizemoves/edis" class="text-decoration-none w-100">
                             <li class="mt-2 mb-4">
                                 <p class="text-s-24 font-df mb-0">e-Distributor</p>
